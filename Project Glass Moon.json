@@ -222,6 +222,60 @@
         "name": "assets\\Start_Pressed.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Quit_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Quit_Idle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Quit_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Quit_Hovered.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Quit_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Quit_Pressed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Options_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Options_Idle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Options_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Options_Hovered.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Options_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Options_Pressed.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -253,7 +307,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210186,
+        "zoomFactor": 0.47893418845352564,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -283,12 +337,62 @@
           "depth": 0.9815950920245399,
           "height": 318.03680981595096,
           "layer": "",
-          "name": "NewText",
+          "name": "Title_1",
           "persistentUuid": "e4da9c1e-8354-4214-b2ce-6a60da163e31",
           "width": 1280,
           "x": 0,
-          "y": 389,
+          "y": 360,
           "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 71,
+          "height": 118,
+          "keepRatio": true,
+          "layer": "",
+          "name": "StartButton",
+          "persistentUuid": "c32decff-86ca-4181-93f7-52b118f7c03d",
+          "width": 164,
+          "x": 560,
+          "y": 135,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1.5183867141162515,
+          "height": 62.25385527876631,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Title_2",
+          "persistentUuid": "81939afb-061e-4296-8e74-8bb97723b886",
+          "width": 1280,
+          "x": 0,
+          "y": 645,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 30.749999999999996,
+          "height": 118,
+          "layer": "",
+          "name": "QuitButton",
+          "persistentUuid": "2df747dc-9c31-4d83-9f24-d0bfb86faeb5",
+          "width": 164,
+          "x": 960,
+          "y": 135,
+          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -299,12 +403,12 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "BlueButton",
-          "persistentUuid": "c32decff-86ca-4181-93f7-52b118f7c03d",
+          "name": "OptionsButton",
+          "persistentUuid": "ecffcca8-dfb7-4402-96ad-29faad1744cf",
           "width": 0,
-          "x": 485,
-          "y": 201,
-          "zOrder": 6,
+          "x": 96,
+          "y": 122,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -567,47 +671,6 @@
         },
         {
           "assetStoreId": "",
-          "bold": true,
-          "italic": false,
-          "name": "Title",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "PROJECT GLASS MOON",
-          "font": "raleway.thin.ttf",
-          "textAlignment": "center",
-          "characterSize": 130,
-          "color": {
-            "b": 194,
-            "g": 173,
-            "r": 104
-          },
-          "content": {
-            "bold": true,
-            "isOutlineEnabled": true,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "0;0;0",
-            "outlineThickness": 5,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "PROJECT GLASS MOON",
-            "font": "raleway.thin.ttf",
-            "textAlignment": "center",
-            "characterSize": 130,
-            "color": "104;173;194"
-          }
-        },
-        {
-          "assetStoreId": "",
           "name": "background_menu",
           "type": "Video::VideoObject",
           "variables": [],
@@ -627,28 +690,9 @@
         },
         {
           "assetStoreId": "",
-          "name": "background_menu2",
-          "type": "Video::VideoObject",
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "content": {
-            "opacity": 255,
-            "loop": false,
-            "volume": 0,
-            "videoResource": "background.mp4"
-          }
-        },
-        {
-          "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "NewText",
+          "name": "Title_1",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
@@ -689,17 +733,17 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "NewText2",
+          "name": "Title_2",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "START",
+          "string": "A TSUKIHIME-INSPIRED TIC-TAC-TOE GAME",
           "font": "raleway.regular.ttf",
           "textAlignment": "center",
-          "characterSize": 50,
+          "characterSize": 20,
           "color": {
             "b": 255,
             "g": 240,
@@ -707,10 +751,10 @@
           },
           "content": {
             "bold": false,
-            "isOutlineEnabled": true,
+            "isOutlineEnabled": false,
             "isShadowEnabled": true,
             "italic": false,
-            "outlineColor": "92;164;255",
+            "outlineColor": "0;0;0",
             "outlineThickness": 2,
             "shadowAngle": 90,
             "shadowBlurRadius": 2,
@@ -719,23 +763,12 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "START",
+            "text": "A TSUKIHIME-INSPIRED TIC-TAC-TOE GAME",
             "font": "raleway.regular.ttf",
             "textAlignment": "center",
-            "characterSize": 50,
+            "characterSize": 20,
             "color": "189;240;255"
           }
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "NewSprite2",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": []
         },
         {
           "areaMaxX": 64,
@@ -745,7 +778,7 @@
           "areaMinY": 0,
           "areaMinZ": 0,
           "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
-          "name": "BlueButton",
+          "name": "StartButton",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -784,7 +817,7 @@
               "italic": false,
               "smoothed": true,
               "underlined": false,
-              "string": "Button",
+              "string": "",
               "font": "",
               "textAlignment": "center",
               "characterSize": 60,
@@ -807,7 +840,7 @@
                 "shadowOpacity": 127,
                 "smoothed": true,
                 "underlined": false,
-                "text": "Button",
+                "text": "",
                 "font": "",
                 "textAlignment": "center",
                 "characterSize": 60,
@@ -815,13 +848,254 @@
               }
             },
             "Pressed": {
-              "bottomMargin": 16,
+              "bottomMargin": 32,
               "height": 106,
               "leftMargin": 16,
               "rightMargin": 16,
               "texture": "assets\\Start_Pressed.png",
               "tiled": false,
-              "topMargin": 32,
+              "topMargin": 16,
+              "width": 256
+            }
+          },
+          "instances": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ]
+        },
+        {
+          "areaMaxX": 64,
+          "areaMaxY": 64,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+          "name": "QuitButton",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "assets\\Quit_Hovered.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "assets\\Quit_Idle.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 60,
+              "color": {
+                "b": 99,
+                "g": 69,
+                "r": 28
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "",
+                "font": "",
+                "textAlignment": "center",
+                "characterSize": 60,
+                "color": "28;69;99"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "assets\\Quit_Pressed.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 256
+            }
+          },
+          "instances": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ]
+        },
+        {
+          "areaMaxX": 64,
+          "areaMaxY": 64,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+          "name": "OptionsButton",
+          "persistentUuid": "4a8c55fc-3f93-4ae6-b4e7-cb799263699a",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "assets\\Options_Hovered.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "assets\\Options_Idle.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 60,
+              "color": {
+                "b": 99,
+                "g": 69,
+                "r": 28
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "",
+                "font": "",
+                "textAlignment": "center",
+                "characterSize": 60,
+                "color": "28;69;99"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "assets\\Options_Pressed.png",
+              "tiled": false,
+              "topMargin": 16,
               "width": 256
             }
           },
@@ -862,37 +1136,34 @@
         "folderName": "__ROOT",
         "children": [
           {
+            "objectName": "Title_1"
+          },
+          {
+            "objectName": "Title_2"
+          },
+          {
             "objectName": "background_1"
           },
           {
             "objectName": "background_2"
           },
           {
-            "objectName": "background_menu"
-          },
-          {
-            "objectName": "NewText"
-          },
-          {
-            "objectName": "NewText2"
-          },
-          {
-            "objectName": "NewSprite2"
-          },
-          {
-            "objectName": "background_menu2"
-          },
-          {
             "objectName": "Arc_Menu"
-          },
-          {
-            "objectName": "BlueButton"
           },
           {
             "objectName": "Ciel_menu"
           },
           {
-            "objectName": "Title"
+            "objectName": "background_menu"
+          },
+          {
+            "objectName": "StartButton"
+          },
+          {
+            "objectName": "QuitButton"
+          },
+          {
+            "objectName": "OptionsButton"
           }
         ]
       },
@@ -912,20 +1183,44 @@
           "actions": [
             {
               "type": {
-                "value": "Video::SetPlaybackSpeed"
-              },
-              "parameters": [
-                "background_menu",
-                "=",
-                "20"
-              ]
-            },
-            {
-              "type": {
                 "value": "Video::Play"
               },
               "parameters": [
                 "background_menu"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+              },
+              "parameters": [
+                "QuitButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
               ]
             }
           ]
