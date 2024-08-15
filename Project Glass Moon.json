@@ -83,24 +83,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
-        "file": "arcueid_menu.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "arcueid_menu.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ciel_menu.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ciel_menu.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
         "file": "raleway.thin.ttf",
         "kind": "font",
         "metadata": "",
@@ -123,76 +105,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Blue Button_Hovered.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/Blue Button_Hovered.png\",\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Blue Button_Hovered.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/1ffd07cb739df2a909155dd3057f6def46b833ced6ef1a09527b6ea59e88e464_Blue Button_Hovered.png",
-          "name": "Blue Button_Hovered.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Blue Button_Idle.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/Blue Button_Idle.png\",\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Blue Button_Idle.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/eeac55458b66fb84f756b38085fbf7d1e079c39363c942abd35ea9d0939465ce_Blue Button_Idle.png",
-          "name": "Blue Button_Idle.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Blue Button_Pressed.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/Blue Button_Pressed.png\",\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Blue Button_Pressed.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/f0ede8843d544f6e84bc09299a8aabffbce558966f25af98f7b47ab1648217ce_Blue Button_Pressed.png",
-          "name": "Blue Button_Pressed.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Blue Button_Hovered.png2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/Blue Button_Hovered.png2.png\"}",
-        "name": "Blue Button_Hovered.png2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Blue Button_Hovered.png3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Blue Button_Hovered.png3",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "sparkle.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"sparkle.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "sparkle.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Start_Idle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Start_Idle.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -363,6 +279,98 @@
         "name": "assets\\Return_Pressed.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Border2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/324e5f522f6242e9f93090e75ddc38427c3a6c42e8236dbf0ed541bd85cf7221_Square White Slider Border.png",
+          "name": "Square White Slider Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Fill Bar2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/47bc684198cd25b3ec74b0e72c2e2c7abb1b6736bd9f4b78a943c663e83118bf_Square White Slider Fill Bar.png",
+          "name": "Square White Slider Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Thumb2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
+          "name": "Square White Slider Thumb.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Toggle_Off.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Toggle_Off.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Toggle Switch/pixel art/e88334de6c9ad921b4719b34a512d70b923fcf36112610a7f9ed4d56aa77cfd0_Square White Toggle_Off.png",
+          "name": "Square White Toggle_Off.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Toggle_On.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Toggle_On.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Toggle Switch/pixel art/ebdb63dcba9c53d41a0a468ba28929bf88b1b8698d672fc17568723fe1fbc3cc_Square White Toggle_On.png",
+          "name": "Square White Toggle_On.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Default_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Default_Idle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Default_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Default_Hovered.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Default_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Default_Pressed.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -372,7 +380,26 @@
     "folderName": "__ROOT"
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "Music",
+      "type": "number",
+      "value": 25
+    },
+    {
+      "folded": true,
+      "name": "Sound",
+      "type": "number",
+      "value": 25
+    },
+    {
+      "folded": true,
+      "name": "Fullscreen",
+      "type": "boolean",
+      "value": false
+    }
+  ],
   "layouts": [
     {
       "b": 209,
@@ -394,7 +421,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4950840073748899,
+        "zoomFactor": 0.604083874998888,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -622,6 +649,105 @@
           "x": 550,
           "y": 124,
           "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 181,
+          "keepRatio": true,
+          "layer": "OptionsLayer",
+          "name": "Music",
+          "persistentUuid": "4bf5fbbd-b259-415d-8b59-082c2902f1d9",
+          "width": 238,
+          "x": 113,
+          "y": 387,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 86,
+          "keepRatio": true,
+          "layer": "OptionsLayer",
+          "name": "Volume",
+          "persistentUuid": "58ffa8db-76ed-4b9b-8f7d-7fcabcf075f2",
+          "width": 256,
+          "x": 345,
+          "y": 300,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "OptionsLayer",
+          "name": "Fullscreen",
+          "persistentUuid": "3bba6c1e-2c7f-43d3-8cb8-abc639e8da8f",
+          "width": 0,
+          "x": 870,
+          "y": 360,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "OptionsLayer",
+          "name": "MusicSlider",
+          "persistentUuid": "44a5c398-13b6-4e5f-a05d-70e9c2ba4003",
+          "width": 0,
+          "x": 333,
+          "y": 404,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 56.22857142857143,
+          "height": 82,
+          "layer": "OptionsLayer",
+          "name": "FullscreenToggle",
+          "persistentUuid": "803e9a3d-ae67-49cd-aff9-ab5180e01c5b",
+          "width": 82,
+          "x": 947,
+          "y": 435,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 87,
+          "keepRatio": true,
+          "layer": "OptionsLayer",
+          "name": "DefaultButton",
+          "persistentUuid": "f44ed168-d20c-42a1-bcf1-a9c57cad187e",
+          "width": 390,
+          "x": 435,
+          "y": 600,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1767,6 +1893,510 @@
               "effects": []
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Music",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Music\n\nSFX",
+          "font": "raleway.regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 255,
+            "g": 247,
+            "r": 219
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "0;52;117",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Music\n\nSFX",
+            "font": "raleway.regular.ttf",
+            "textAlignment": "center",
+            "characterSize": 50,
+            "color": "219;247;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Volume",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Volume",
+          "font": "raleway.regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 255,
+            "g": 247,
+            "r": 219
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "0;52;117",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Volume",
+            "font": "raleway.regular.ttf",
+            "textAlignment": "center",
+            "characterSize": 50,
+            "color": "219;247;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Fullscreen",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Fullscreen",
+          "font": "raleway.regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 255,
+            "g": 247,
+            "r": 219
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "0;52;117",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Fullscreen",
+            "font": "raleway.regular.ttf",
+            "textAlignment": "center",
+            "characterSize": 50,
+            "color": "219;247;255"
+          }
+        },
+        {
+          "areaMaxX": 64,
+          "areaMaxY": 64,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
+          "name": "MusicSlider",
+          "type": "PanelSpriteSlider::PanelSpriteSlider",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "content": {
+            "BarTopPadding": 6,
+            "BarLeftPadding": 6,
+            "BarRightPadding": 6,
+            "BarBottomPadding": 6,
+            "LabelMargin": 6
+          },
+          "childrenContent": {
+            "Background": {
+              "bottomMargin": 4,
+              "height": 28,
+              "leftMargin": 2,
+              "rightMargin": 2,
+              "texture": "Square White Slider Border.png",
+              "tiled": false,
+              "topMargin": 4,
+              "width": 265
+            },
+            "FillBar": {
+              "bottomMargin": 2,
+              "height": 16,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "Square White Slider Fill Bar.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 16
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "It displays the value when it changes.",
+              "font": "",
+              "textAlignment": "",
+              "characterSize": 20,
+              "color": {
+                "b": 221,
+                "g": 221,
+                "r": 221
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "It displays the value when it changes.",
+                "font": "",
+                "textAlignment": "",
+                "characterSize": 20,
+                "color": "221;221;221"
+              }
+            },
+            "Thumb": {
+              "bottomMargin": 2,
+              "height": 36,
+              "leftMargin": 1,
+              "rightMargin": 1,
+              "texture": "Square White Slider Thumb.png",
+              "tiled": false,
+              "topMargin": 2,
+              "width": 22
+            }
+          },
+          "instances": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ]
+        },
+        {
+          "areaMaxX": 64,
+          "areaMaxY": 64,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "assetStoreId": "7f3b0673f7479b4b487bcbadbb3c8b9412a8e6d8694543f9ec3419365ebff3f5",
+          "name": "FullscreenToggle",
+          "type": "SpriteToggleSwitch::SpriteToggleSwitch",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "content": {},
+          "childrenContent": {
+            "State": {
+              "adaptCollisionMaskAutomatically": false,
+              "updateIfNotVisible": false,
+              "animations": [
+                {
+                  "name": "Unchecked",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": false,
+                          "image": "Square White Toggle_Off.png",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Checked",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": false,
+                          "image": "Square White Toggle_On.png",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "instances": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ]
+        },
+        {
+          "areaMaxX": 64,
+          "areaMaxY": 64,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "assetStoreId": "90d94b6e3a23c34948e59eaaef4679740f8ab588696d59b21e0c0c2ef106b94d",
+          "name": "DefaultButton",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "assets\\Default_Hovered.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "assets\\Default_Idle.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 60,
+              "color": {
+                "b": 99,
+                "g": 69,
+                "r": 28
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "",
+                "font": "",
+                "textAlignment": "center",
+                "characterSize": 60,
+                "color": "28;69;99"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "assets\\Default_Pressed.png",
+              "tiled": false,
+              "topMargin": 16,
+              "width": 256
+            }
+          },
+          "instances": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1786,6 +2416,15 @@
           },
           {
             "objectName": "GameBy"
+          },
+          {
+            "objectName": "Music"
+          },
+          {
+            "objectName": "Volume"
+          },
+          {
+            "objectName": "Fullscreen"
           },
           {
             "objectName": "background_1"
@@ -1812,10 +2451,19 @@
             "objectName": "ReturnButton"
           },
           {
+            "objectName": "DefaultButton"
+          },
+          {
             "objectName": "IntroBackground"
           },
           {
             "objectName": "BlackIntro"
+          },
+          {
+            "objectName": "MusicSlider"
+          },
+          {
+            "objectName": "FullscreenToggle"
           }
         ]
       },
@@ -1885,6 +2533,36 @@
             },
             {
               "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "DefaultButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SpriteToggleSwitch::SpriteToggleSwitch::Activate"
+              },
+              "parameters": [
+                "FullscreenToggle",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+              },
+              "parameters": [
+                "MusicSlider",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
@@ -1893,8 +2571,83 @@
                 "\"d\"",
                 "0",
                 "\"linear\"",
-                "0.2",
+                "0.1",
                 "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "DefaultButton",
+                "Tween",
+                "\"d\"",
+                "0",
+                "\"linear\"",
+                "0.1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "MusicSlider",
+                "Tween",
+                "\"d\"",
+                "0",
+                "\"linear\"",
+                "0.1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "FullscreenToggle",
+                "Tween",
+                "\"d\"",
+                "0",
+                "\"linear\"",
+                "0.1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "Fullscreen",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "Volume",
+                "Opacity",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "Music",
+                "Opacity",
+                "=",
+                "0"
               ]
             },
             {
@@ -2031,7 +2784,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "2.3"
+                "3"
               ]
             },
             {
@@ -2262,10 +3015,124 @@
             },
             {
               "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "DefaultButton",
+                "Tween",
+                "\"d\"",
+                "255",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "MusicSlider",
+                "Tween",
+                "\"d\"",
+                "255",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "FullscreenToggle",
+                "Tween",
+                "\"d\"",
+                "255",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Fullscreen",
+                "Tween",
+                "\"d\"",
+                "255",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Volume",
+                "Tween",
+                "\"d\"",
+                "255",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Music",
+                "Tween",
+                "\"d\"",
+                "255",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::Activate"
               },
               "parameters": [
                 "ReturnButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+              },
+              "parameters": [
+                "MusicSlider",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "DefaultButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SpriteToggleSwitch::SpriteToggleSwitch::Activate"
+              },
+              "parameters": [
+                "FullscreenToggle",
                 "yes",
                 ""
               ]
@@ -2302,10 +3169,124 @@
             },
             {
               "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "DefaultButton",
+                "Tween",
+                "\"d\"",
+                "0",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "FullscreenToggle",
+                "Tween",
+                "\"d\"",
+                "0",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "MusicSlider",
+                "Tween",
+                "\"d\"",
+                "0",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Fullscreen",
+                "Tween",
+                "\"d\"",
+                "0",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Volume",
+                "Tween",
+                "\"d\"",
+                "0",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Music",
+                "Tween",
+                "\"d\"",
+                "0",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::Activate"
               },
               "parameters": [
                 "ReturnButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "DefaultButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+              },
+              "parameters": [
+                "MusicSlider",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SpriteToggleSwitch::SpriteToggleSwitch::Activate"
+              },
+              "parameters": [
+                "FullscreenToggle",
                 "no",
                 ""
               ]
@@ -2533,8 +3514,8 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": true,
-          "name": "IntroLayer",
+          "isLocked": false,
+          "name": "OptionsLayer",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
@@ -2566,8 +3547,8 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": false,
-          "name": "OptionsLayer",
+          "isLocked": true,
+          "name": "IntroLayer",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
@@ -2694,6 +3675,3053 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "author": "",
+      "category": "User interface",
+      "extensionNamespace": "",
+      "fullName": "Toggle switch",
+      "helpPath": "/objects/toggle-switch",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTIzLDIzSDljLTMuOSwwLTctMy4xLTctN3YwYzAtMy45LDMuMS03LDctN2gxNGMzLjksMCw3LDMuMSw3LDd2MEMzMCwxOS45LDI2LjksMjMsMjMsMjN6Ii8+DQo8Y2lyY2xlIGNsYXNzPSJzdDAiIGN4PSI5IiBjeT0iMTYiIHI9IjQiLz4NCjwvc3ZnPg0K",
+      "name": "SpriteToggleSwitch",
+      "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Line Hero Pack/Master/SVG/Interface Elements/8d0cd8cd0c9318f4f6efde6ee6b4c192bd19306467f80c9970387a259300f895_Interface Elements_interface_ui_toggle_switch_on_off.svg",
+      "shortDescription": "Toggle switch that users can click or touch.",
+      "version": "1.3.1",
+      "description": [
+        "Toggle switch that users can click or touch. The switch can be customized with sprites.",
+        "",
+        "There are ready-to-use toggle switches in the asset-store [settings UI pack](https://editor.gdevelop.io/?initial-dialog=asset-store&asset-pack=settings-ui-settings-ui)."
+      ],
+      "origin": {
+        "identifier": "SpriteToggleSwitch",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "ui",
+        "widget",
+        "toggle",
+        "switch",
+        "check box"
+      ],
+      "authorIds": [
+        "IWykYNRvhCZBN3vEgKEbBPOR3Oc2",
+        "gqDaZjCfevOOxBYkK6zlhtZnXCg1"
+      ],
+      "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "The finite state machine used internally by the switch object.",
+          "fullName": "Switch finite state machine",
+          "name": "SwitchFSM",
+          "objectType": "",
+          "private": true,
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::SetPropertyWasChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "no"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::IsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::SetPropertyWasChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::IsClicked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "ButtonFSM",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::TogglePropertyIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::SwitchFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the toggle switch is checked.",
+              "fullName": "Is checked",
+              "functionType": "Condition",
+              "name": "IsChecked",
+              "sentence": "_PARAM0_ is checked",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::PropertyIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::SwitchFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the toggle switch was checked in the current frame.",
+              "fullName": "Has just been checked",
+              "functionType": "Condition",
+              "name": "HasJustBeenChecked",
+              "sentence": "_PARAM0_ has just been checked",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::PropertyIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SpriteToggleSwitch::SwitchFSM::PropertyWasChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::SwitchFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the toggle switch was unchecked in the current frame.",
+              "fullName": "Has just been unchecked",
+              "functionType": "Condition",
+              "name": "HasJustBeenUnchecked",
+              "sentence": "_PARAM0_ has just been unchecked",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SpriteToggleSwitch::SwitchFSM::PropertyIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::PropertyWasChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::SwitchFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the toggle switch was toggled in the current frame.",
+              "fullName": "Has just been toggled",
+              "functionType": "Condition",
+              "name": "HasJustBeenToggled",
+              "sentence": "_PARAM0_ has just been toggled",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::HasJustBeenChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::HasJustBeenUnchecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::SwitchFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check (or uncheck) the toggle switch.",
+              "fullName": "Check (or uncheck)",
+              "functionType": "Action",
+              "name": "SetChecked",
+              "sentence": "Check _PARAM0_: _PARAM2_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Avoid a started touch to interfere with a state change from events."
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "GetArgumentAsBoolean"
+                              },
+                              "parameters": [
+                                "\"Value\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::SwitchFSM::IsChecked"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "GetArgumentAsBoolean"
+                              },
+                              "parameters": [
+                                "\"Value\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "SpriteToggleSwitch::SwitchFSM::IsChecked"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::ResetState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "ButtonFSM",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "GetArgumentAsBoolean"
+                      },
+                      "parameters": [
+                        "\"Value\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::SetPropertyIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "no"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GetArgumentAsBoolean"
+                      },
+                      "parameters": [
+                        "\"Value\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::SetPropertyIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::SwitchFSM",
+                  "type": "behavior"
+                },
+                {
+                  "defaultValue": "yes",
+                  "description": "IsChecked",
+                  "name": "Value",
+                  "optional": true,
+                  "type": "yesorno"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Toggle the switch.",
+              "fullName": "Toggle",
+              "functionType": "Action",
+              "name": "ToggleChecked",
+              "sentence": "Toggle _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::SetPropertyPreviousIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::IsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::SetPropertyPreviousIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::PropertyPreviousIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::SetChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "no",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SpriteToggleSwitch::SwitchFSM::PropertyPreviousIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::SetChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::SwitchFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "",
+              "type": "Behavior",
+              "label": "Button finite state machine",
+              "description": "",
+              "group": "",
+              "extraInformation": [
+                "SpriteToggleSwitch::ButtonFSM"
+              ],
+              "name": "ButtonFSM"
+            },
+            {
+              "value": "false",
+              "type": "Boolean",
+              "label": "Is checked",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "name": "IsChecked"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "name": "PreviousIsChecked"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "WasChecked"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        },
+        {
+          "description": "The finite state machine used internally by the button object.",
+          "fullName": "Button finite state machine",
+          "name": "ButtonFSM",
+          "objectType": "",
+          "private": true,
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Finite state machine",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "The \"Validated\" state only last one frame."
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "\"Validated\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyState"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "\"Idle\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Check position",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Make sure the cursor position is only checked once per frame."
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyMouseIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "no"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::PropertyShouldCheckHovering"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "CollisionPoint"
+                              },
+                              "parameters": [
+                                "Object",
+                                "MouseOnlyCursorX(Object.Layer(), 0)",
+                                "MouseOnlyCursorY(Object.Layer(), 0)"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyMouseIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Touches are always pressed, so ShouldCheckHovering doesn't matter."
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyTouchIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "no"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::PropertyTouchId"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "!=",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "CollisionPoint"
+                              },
+                              "parameters": [
+                                "Object",
+                                "TouchX(Object.Behavior::PropertyTouchId(), Object.Layer(), 0)",
+                                "TouchY(Object.Behavior::PropertyTouchId(), Object.Layer(), 0)"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyTouchIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Handle touch start",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "HasAnyTouchOrMouseStarted"
+                              },
+                              "parameters": [
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyIndex"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Repeat",
+                              "repeatExpression": "StartedTouchOrMouseCount()",
+                              "conditions": [],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "CollisionPoint"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "TouchX(StartedTouchOrMouseId(Object.Behavior::PropertyIndex()), Object.Layer(), 0)",
+                                        "TouchY(StartedTouchOrMouseId(Object.Behavior::PropertyIndex()), Object.Layer(), 0)"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyTouchId"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "Behavior",
+                                        "=",
+                                        "StartedTouchOrMouseId(Object.Behavior::PropertyIndex())"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyTouchIsInside"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "Behavior",
+                                        "yes"
+                                      ]
+                                    }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Or"
+                                          },
+                                          "parameters": [],
+                                          "subInstructions": [
+                                            {
+                                              "type": {
+                                                "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                                              },
+                                              "parameters": [
+                                                "Object",
+                                                "Behavior",
+                                                "=",
+                                                "\"Hovered\""
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                                              },
+                                              "parameters": [
+                                                "Object",
+                                                "Behavior",
+                                                "=",
+                                                "\"Idle\""
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyState"
+                                          },
+                                          "parameters": [
+                                            "Object",
+                                            "Behavior",
+                                            "=",
+                                            "\"PressedInside\""
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyIndex"
+                                      },
+                                      "parameters": [
+                                        "Object",
+                                        "Behavior",
+                                        "+",
+                                        "1"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Apply position changes",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "SpriteToggleSwitch::ButtonFSM::PropertyMouseIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"Hovered\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"Idle\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::PropertyMouseIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"Idle\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"Hovered\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "SpriteToggleSwitch::ButtonFSM::PropertyTouchIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"PressedInside\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"PressedOutside\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::PropertyTouchIsInside"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"PressedOutside\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyState"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "\"PressedInside\""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Handle touch end",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "HasTouchEnded"
+                              },
+                              "parameters": [
+                                "",
+                                "Object.Behavior::PropertyTouchId()"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyTouchId"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "\"PressedInside\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyState"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "\"Validated\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "\"PressedInside\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "\"Validated\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyState"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Behavior",
+                                    "=",
+                                    "\"Idle\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    }
+                  ],
+                  "parameters": []
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onDeActivate",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::ResetState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Reset the state of the button.",
+              "fullName": "Reset state",
+              "functionType": "Action",
+              "name": "ResetState",
+              "sentence": "Reset the button state of _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"Idle\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::SetPropertyTouchId"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button is not used.",
+              "fullName": "Is idle",
+              "functionType": "Condition",
+              "name": "IsIdle",
+              "sentence": "_PARAM0_ is idle",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"Idle\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button was just clicked.",
+              "fullName": "Is clicked",
+              "functionType": "Condition",
+              "name": "IsClicked",
+              "sentence": "_PARAM0_ is clicked",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"Validated\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the cursor is hovered over the button.",
+              "fullName": "Is hovered",
+              "functionType": "Condition",
+              "name": "IsHovered",
+              "sentence": "_PARAM0_ is hovered",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"Hovered\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button is either hovered or pressed but not hovered.",
+              "fullName": "Is focused",
+              "functionType": "Condition",
+              "name": "IsFocused",
+              "sentence": "_PARAM0_ is focused",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"Hovered\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"PressedOutside\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button is currently being pressed with mouse or touch.",
+              "fullName": "Is pressed",
+              "functionType": "Condition",
+              "name": "IsPressed",
+              "sentence": "_PARAM0_ is pressed",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"PressedInside\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button is currently being pressed outside with mouse or touch.",
+              "fullName": "Is held outside",
+              "functionType": "Condition",
+              "name": "IsPressedOutside",
+              "sentence": "_PARAM0_ is held outside",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::PropertyState"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"PressedOutside\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the touch id that is using the button or 0 if none.",
+              "fullName": "Touch id",
+              "functionType": "ExpressionAndCondition",
+              "name": "TouchId",
+              "sentence": "the touch id",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "Object.Behavior::PropertyTouchId()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpriteToggleSwitch::ButtonFSM",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "true",
+              "type": "Boolean",
+              "label": "",
+              "description": "Should check hovering",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "ShouldCheckHovering"
+            },
+            {
+              "value": "Idle",
+              "type": "Choice",
+              "label": "State",
+              "description": "",
+              "group": "",
+              "extraInformation": [
+                "Idle",
+                "Hovered",
+                "PressedInside",
+                "PressedOutside",
+                "Validated"
+              ],
+              "hidden": true,
+              "name": "State"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "Touch id",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "TouchId"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "Touch is inside",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "TouchIsInside"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "Mouse is inside",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "MouseIsInside"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "Index"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": [
+        {
+          "areaMaxX": 64,
+          "areaMaxY": 64,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "defaultName": "ToggleSwitch",
+          "description": "A toggle switch that users can click or touch.",
+          "fullName": "Toggle switch",
+          "name": "SpriteToggleSwitch",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Create one background instance for of each state."
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "State",
+                        "0",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Pass the configuration to the behavior.\nThe PreviousIsChecked property allows to detect a change of \"intial value\" on hot reload."
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::PropertyIsChecked"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::SetChecked"
+                      },
+                      "parameters": [
+                        "State",
+                        "SwitchFSM",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetPropertyPreviousIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::PropertyIsChecked"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::SetChecked"
+                      },
+                      "parameters": [
+                        "State",
+                        "SwitchFSM",
+                        "no",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetPropertyPreviousIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::UpdateStateAnimation"
+                      },
+                      "parameters": [
+                        "Object",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeSprite"
+                      },
+                      "parameters": [
+                        "State",
+                        "=",
+                        "State.AnimationFrameCount() - 1"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": [
+                {
+                  "name": "Background",
+                  "objects": [
+                    {
+                      "name": "Idle"
+                    },
+                    {
+                      "name": "Hovered"
+                    },
+                    {
+                      "name": "Pressed"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onHotReloading",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::PropertyIsChecked"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::PropertyPreviousIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "SwitchFSM",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "yes",
+                        "no"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetPropertyPreviousIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::PropertyIsChecked"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::PropertyPreviousIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "SwitchFSM",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "SwitchFSM",
+                        "no"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetPropertyPreviousIsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::UpdateStateAnimation"
+                      },
+                      "parameters": [
+                        "Object",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the toggle switch is checked.",
+              "fullName": "Is checked",
+              "functionType": "Condition",
+              "name": "IsChecked",
+              "sentence": "_PARAM0_ is checked",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::IsChecked"
+                      },
+                      "parameters": [
+                        "State",
+                        "SwitchFSM",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the toggle switch was checked in the current frame.",
+              "fullName": "Has just been checked",
+              "functionType": "Condition",
+              "name": "HasJustBeenChecked",
+              "sentence": "_PARAM0_ has just been checked",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::HasJustBeenChecked"
+                      },
+                      "parameters": [
+                        "State",
+                        "SwitchFSM",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the toggle switch was unchecked in the current frame.",
+              "fullName": "Has just been unchecked",
+              "functionType": "Condition",
+              "name": "HasJustBeenUnchecked",
+              "sentence": "_PARAM0_ has just been unchecked",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::HasJustBeenUnchecked"
+                      },
+                      "parameters": [
+                        "State",
+                        "SwitchFSM",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the toggle switch was checked or unchecked in the current frame.",
+              "fullName": "Has just been toggled",
+              "functionType": "Condition",
+              "name": "HasJustBeenToggled",
+              "sentence": "_PARAM0_ has just been toggled",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::HasJustBeenToggled"
+                      },
+                      "parameters": [
+                        "State",
+                        "SwitchFSM",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check (or uncheck) the toggle switch.",
+              "fullName": "Check (or uncheck)",
+              "functionType": "Action",
+              "name": "SetChecked",
+              "sentence": "Check _PARAM0_: _PARAM1_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "GetArgumentAsBoolean"
+                      },
+                      "parameters": [
+                        "\"Value\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::SetChecked"
+                      },
+                      "parameters": [
+                        "State",
+                        "SwitchFSM",
+                        "no",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GetArgumentAsBoolean"
+                      },
+                      "parameters": [
+                        "\"Value\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::SetChecked"
+                      },
+                      "parameters": [
+                        "State",
+                        "SwitchFSM",
+                        "yes",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                },
+                {
+                  "defaultValue": "yes",
+                  "description": "IsChecked",
+                  "name": "Value",
+                  "optional": true,
+                  "type": "yesorno"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Toggle the switch.",
+              "fullName": "Toggle",
+              "functionType": "Action",
+              "name": "ToggleChecked",
+              "sentence": "Toggle _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SwitchFSM::ToggleChecked"
+                      },
+                      "parameters": [
+                        "State",
+                        "SwitchFSM",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button is not used.",
+              "fullName": "Is idle",
+              "functionType": "Condition",
+              "name": "IsIdle",
+              "private": true,
+              "sentence": "_PARAM0_ is idle",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::IsIdle"
+                      },
+                      "parameters": [
+                        "State",
+                        "ButtonFSM",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button was just clicked.",
+              "fullName": "Is clicked",
+              "functionType": "Condition",
+              "name": "IsClicked",
+              "private": true,
+              "sentence": "_PARAM0_ is clicked",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::IsClicked"
+                      },
+                      "parameters": [
+                        "State",
+                        "ButtonFSM",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the cursor is hovered over the button.",
+              "fullName": "Is hovered",
+              "functionType": "Condition",
+              "name": "IsHovered",
+              "sentence": "_PARAM0_ is hovered",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::IsHovered"
+                      },
+                      "parameters": [
+                        "State",
+                        "ButtonFSM",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button is either hovered or pressed but not hovered.",
+              "fullName": "Is focused",
+              "functionType": "Condition",
+              "name": "IsFocused",
+              "private": true,
+              "sentence": "_PARAM0_ is focused",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::IsFocused"
+                      },
+                      "parameters": [
+                        "State",
+                        "ButtonFSM",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the button is currently being pressed with mouse or touch.",
+              "fullName": "Is pressed",
+              "functionType": "Condition",
+              "name": "IsPressed",
+              "private": true,
+              "sentence": "_PARAM0_ is pressed",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::ButtonFSM::IsPressed"
+                      },
+                      "parameters": [
+                        "State",
+                        "ButtonFSM",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Update the state animation.",
+              "fullName": "Update state animation",
+              "functionType": "Action",
+              "name": "UpdateStateAnimation",
+              "private": true,
+              "sentence": "Update the state animation of _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::IsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "ButtonFSM",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "State",
+                        "\"Unchecked\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "State",
+                        "\"Checked\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlayAnimation"
+                      },
+                      "parameters": [
+                        "State"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::IsChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "ButtonFSM",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimationName"
+                      },
+                      "parameters": [
+                        "State",
+                        "\"Checked\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "State",
+                        "\"Unchecked\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlayAnimation"
+                      },
+                      "parameters": [
+                        "State"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "De/activate interactions with the button.",
+              "fullName": "De/activate interactions",
+              "functionType": "Action",
+              "name": "Activate",
+              "sentence": "Activate interactions with _PARAM0_: _PARAM1_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GetArgumentAsBoolean"
+                      },
+                      "parameters": [
+                        "\"ShouldActivate\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "State",
+                        "ButtonFSM",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "GetArgumentAsBoolean"
+                      },
+                      "parameters": [
+                        "\"ShouldActivate\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "State",
+                        "ButtonFSM",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                },
+                {
+                  "description": "Activate",
+                  "name": "ShouldActivate",
+                  "type": "yesorno"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if interactions are activated on the button.",
+              "fullName": "Interactions activated",
+              "functionType": "Condition",
+              "name": "IsActivated",
+              "sentence": "Interactions on _PARAM0_ are activated",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BehaviorActivated"
+                      },
+                      "parameters": [
+                        "State",
+                        "ButtonFSM"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "SpriteToggleSwitch::SpriteToggleSwitch",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "true",
+              "type": "Boolean",
+              "label": "Is checked",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "name": "IsChecked"
+            },
+            {
+              "value": "",
+              "type": "Boolean",
+              "label": "",
+              "description": "It's used to detect a change at hot reload.",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "PreviousIsChecked"
+            }
+          ],
+          "objects": [
+            {
+              "adaptCollisionMaskAutomatically": true,
+              "assetStoreId": "",
+              "name": "State",
+              "type": "Sprite",
+              "updateIfNotVisible": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "ButtonFSM",
+                  "type": "SpriteToggleSwitch::ButtonFSM",
+                  "ShouldCheckHovering": true,
+                  "State": "Idle",
+                  "TouchId": 0,
+                  "TouchIsInside": false,
+                  "MouseIsInside": false,
+                  "Index": 0
+                },
+                {
+                  "name": "SwitchFSM",
+                  "type": "SpriteToggleSwitch::SwitchFSM",
+                  "ButtonFSM": "ButtonFSM",
+                  "IsChecked": false,
+                  "WasChecked": false
+                }
+              ],
+              "animations": [
+                {
+                  "name": "Unchecked",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Checked",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "State"
+              }
+            ]
+          },
+          "objectsGroups": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": []
+        }
+      ]
+    },
     {
       "author": "Tristan Rhodes (https://victrisgames.itch.io/), D8H",
       "category": "User interface",
