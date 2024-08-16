@@ -6,3 +6,4 @@ Before I start, I wanted to say that I'll update this everytime I've think of a 
 
 Aug 15, 2024 - Good morning, yesterday I've added an intro and forgot to update it. I'll be working on the options menu in a bit.
 Aug 15, 2024 - I'll be adding volume sliders and the fullscreen functions later. I'm 60% done, but I need to prep for school for now.
+Aug 16, 2024 - Finished the Options menu, I didn't expect it was this hard and annoying, but hey, it's finished. Let's move to the main game shall we?
