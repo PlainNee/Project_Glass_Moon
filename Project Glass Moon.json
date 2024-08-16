@@ -297,7 +297,7 @@
         "alwaysLoaded": false,
         "file": "assets/Square White Slider Fill Bar2.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Square White Slider Fill Bar2.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "Square White Slider Fill Bar.png",
         "smoothed": false,
         "userAdded": false,
@@ -310,7 +310,7 @@
         "alwaysLoaded": false,
         "file": "assets/Square White Slider Thumb2.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Square White Slider Thumb2.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "Square White Slider Thumb.png",
         "smoothed": false,
         "userAdded": false,
@@ -371,6 +371,60 @@
         "name": "assets\\Default_Pressed.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Checked_Fullscreen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Checked_Fullscreen.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Unchecked_Fullscreen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Unchecked_Fullscreen.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Unchecked.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Unchecked.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Checked.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Checked.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Border.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Square White Slider Border.png2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Thumb.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Square White Slider Thumb.png2",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -383,19 +437,19 @@
   "variables": [
     {
       "folded": true,
-      "name": "Music",
+      "name": "MusicValue",
       "type": "number",
-      "value": 25
+      "value": 50
     },
     {
       "folded": true,
-      "name": "Sound",
+      "name": "SoundValue",
       "type": "number",
-      "value": 25
+      "value": 50
     },
     {
       "folded": true,
-      "name": "Fullscreen",
+      "name": "FullscreenState",
       "type": "boolean",
       "value": false
     }
@@ -421,7 +475,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.604083874998888,
+        "zoomFactor": 0.5653158055126322,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -709,28 +763,13 @@
           "height": 0,
           "keepRatio": true,
           "layer": "OptionsLayer",
+          "locked": true,
           "name": "MusicSlider",
           "persistentUuid": "44a5c398-13b6-4e5f-a05d-70e9c2ba4003",
           "width": 0,
           "x": 333,
           "y": 404,
           "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 56.22857142857143,
-          "height": 82,
-          "layer": "OptionsLayer",
-          "name": "FullscreenToggle",
-          "persistentUuid": "803e9a3d-ae67-49cd-aff9-ab5180e01c5b",
-          "width": 82,
-          "x": 947,
-          "y": 435,
-          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -751,143 +790,42 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 5.466666666666667,
+          "height": 82,
+          "keepRatio": true,
+          "layer": "OptionsLayer",
+          "name": "FullscreenToggle",
+          "persistentUuid": "87b47b10-3978-474f-80c8-584e6bb71a58",
+          "width": 82,
+          "x": 947,
+          "y": 435,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "OptionsLayer",
+          "name": "SFXSlider",
+          "persistentUuid": "3ff82bdb-51ac-4276-99a2-c3aa90a9c8a1",
+          "width": 0,
+          "x": 333,
+          "y": 520,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "background_1",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [
-            {
-              "effectType": "KawaseBlur",
-              "name": "Effect",
-              "doubleParameters": {
-                "blur": 0.5,
-                "padding": 2,
-                "pixelizeX": 1,
-                "pixelizeY": 1,
-                "quality": 3
-              },
-              "stringParameters": {},
-              "booleanParameters": {}
-            }
-          ],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "background.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 1920,
-                            "y": 0
-                          },
-                          {
-                            "x": 1920,
-                            "y": 1080
-                          },
-                          {
-                            "x": 0,
-                            "y": 1080
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "background_2",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "background_2.jpg",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 1920,
-                            "y": 0
-                          },
-                          {
-                            "x": 1920,
-                            "y": 1080
-                          },
-                          {
-                            "x": 0,
-                            "y": 1080
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "assetStoreId": "",
           "name": "background_menu",
@@ -2063,7 +2001,7 @@
               "height": 28,
               "leftMargin": 2,
               "rightMargin": 2,
-              "texture": "Square White Slider Border.png",
+              "texture": "Square White Slider Border.png2",
               "tiled": false,
               "topMargin": 4,
               "width": 265
@@ -2084,33 +2022,33 @@
               "smoothed": true,
               "underlined": false,
               "string": "It displays the value when it changes.",
-              "font": "",
+              "font": "raleway.regular.ttf",
               "textAlignment": "",
               "characterSize": 20,
               "color": {
-                "b": 221,
-                "g": 221,
-                "r": 221
+                "b": 247,
+                "g": 223,
+                "r": 137
               },
               "content": {
                 "bold": false,
                 "isOutlineEnabled": false,
-                "isShadowEnabled": false,
+                "isShadowEnabled": true,
                 "italic": false,
                 "outlineColor": "255;255;255",
                 "outlineThickness": 2,
                 "shadowAngle": 90,
                 "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
+                "shadowColor": "135;222;247",
                 "shadowDistance": 4,
                 "shadowOpacity": 127,
                 "smoothed": true,
                 "underlined": false,
                 "text": "It displays the value when it changes.",
-                "font": "",
+                "font": "raleway.regular.ttf",
                 "textAlignment": "",
                 "characterSize": 20,
-                "color": "221;221;221"
+                "color": "137;223;247"
               }
             },
             "Thumb": {
@@ -2118,127 +2056,10 @@
               "height": 36,
               "leftMargin": 1,
               "rightMargin": 1,
-              "texture": "Square White Slider Thumb.png",
+              "texture": "Square White Slider Thumb.png2",
               "tiled": false,
               "topMargin": 2,
               "width": 22
-            }
-          },
-          "instances": [],
-          "layers": [
-            {
-              "ambientLightColorB": 200,
-              "ambientLightColorG": 200,
-              "ambientLightColorR": 200,
-              "camera3DFarPlaneDistance": 10000,
-              "camera3DFieldOfView": 45,
-              "camera3DNearPlaneDistance": 3,
-              "cameraType": "",
-              "followBaseLayerCamera": false,
-              "isLightingLayer": false,
-              "isLocked": false,
-              "name": "",
-              "renderingType": "",
-              "visibility": true,
-              "cameras": [
-                {
-                  "defaultSize": true,
-                  "defaultViewport": true,
-                  "height": 0,
-                  "viewportBottom": 1,
-                  "viewportLeft": 0,
-                  "viewportRight": 1,
-                  "viewportTop": 0,
-                  "width": 0
-                }
-              ],
-              "effects": []
-            }
-          ]
-        },
-        {
-          "areaMaxX": 64,
-          "areaMaxY": 64,
-          "areaMaxZ": 64,
-          "areaMinX": 0,
-          "areaMinY": 0,
-          "areaMinZ": 0,
-          "assetStoreId": "7f3b0673f7479b4b487bcbadbb3c8b9412a8e6d8694543f9ec3419365ebff3f5",
-          "name": "FullscreenToggle",
-          "type": "SpriteToggleSwitch::SpriteToggleSwitch",
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "content": {},
-          "childrenContent": {
-            "State": {
-              "adaptCollisionMaskAutomatically": false,
-              "updateIfNotVisible": false,
-              "animations": [
-                {
-                  "name": "Unchecked",
-                  "useMultipleDirections": false,
-                  "directions": [
-                    {
-                      "looping": false,
-                      "timeBetweenFrames": 0.08,
-                      "sprites": [
-                        {
-                          "hasCustomCollisionMask": false,
-                          "image": "Square White Toggle_Off.png",
-                          "points": [],
-                          "originPoint": {
-                            "name": "origine",
-                            "x": 0,
-                            "y": 0
-                          },
-                          "centerPoint": {
-                            "automatic": true,
-                            "name": "centre",
-                            "x": 0,
-                            "y": 0
-                          },
-                          "customCollisionMask": []
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "name": "Checked",
-                  "useMultipleDirections": false,
-                  "directions": [
-                    {
-                      "looping": false,
-                      "timeBetweenFrames": 0.08,
-                      "sprites": [
-                        {
-                          "hasCustomCollisionMask": false,
-                          "image": "Square White Toggle_On.png",
-                          "points": [],
-                          "originPoint": {
-                            "name": "origine",
-                            "x": 0,
-                            "y": 0
-                          },
-                          "centerPoint": {
-                            "automatic": true,
-                            "name": "centre",
-                            "x": 0,
-                            "y": 0
-                          },
-                          "customCollisionMask": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
             }
           },
           "instances": [],
@@ -2397,77 +2218,435 @@
               "effects": []
             }
           ]
+        },
+        {
+          "areaMaxX": 64,
+          "areaMaxY": 64,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "assetStoreId": "7f3b0673f7479b4b487bcbadbb3c8b9412a8e6d8694543f9ec3419365ebff3f5",
+          "name": "FullscreenToggle",
+          "type": "SpriteToggleSwitch::SpriteToggleSwitch",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "content": {
+            "IsChecked": false
+          },
+          "childrenContent": {
+            "State": {
+              "adaptCollisionMaskAutomatically": false,
+              "updateIfNotVisible": false,
+              "animations": [
+                {
+                  "name": "Unchecked",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": false,
+                          "image": "assets\\Unchecked.png",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Checked",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": false,
+                          "image": "assets\\Checked.png",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "instances": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ]
+        },
+        {
+          "areaMaxX": 64,
+          "areaMaxY": 64,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
+          "name": "SFXSlider",
+          "type": "PanelSpriteSlider::PanelSpriteSlider",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "content": {
+            "BarTopPadding": 6,
+            "BarLeftPadding": 6,
+            "BarRightPadding": 6,
+            "BarBottomPadding": 6,
+            "LabelMargin": 6
+          },
+          "childrenContent": {
+            "Background": {
+              "bottomMargin": 4,
+              "height": 28,
+              "leftMargin": 2,
+              "rightMargin": 2,
+              "texture": "Square White Slider Border.png2",
+              "tiled": false,
+              "topMargin": 4,
+              "width": 265
+            },
+            "FillBar": {
+              "bottomMargin": 2,
+              "height": 16,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "Square White Slider Fill Bar.png",
+              "tiled": false,
+              "topMargin": 0,
+              "width": 16
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "It displays the value when it changes.",
+              "font": "raleway.regular.ttf",
+              "textAlignment": "",
+              "characterSize": 20,
+              "color": {
+                "b": 247,
+                "g": 223,
+                "r": 137
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": true,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "135;222;247",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "It displays the value when it changes.",
+                "font": "raleway.regular.ttf",
+                "textAlignment": "",
+                "characterSize": 20,
+                "color": "137;223;247"
+              }
+            },
+            "Thumb": {
+              "bottomMargin": 2,
+              "height": 36,
+              "leftMargin": 1,
+              "rightMargin": 1,
+              "texture": "Square White Slider Thumb.png2",
+              "tiled": false,
+              "topMargin": 2,
+              "width": 22
+            }
+          },
+          "instances": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "Title_1"
+            "folderName": "Buttons",
+            "children": [
+              {
+                "objectName": "StartButton"
+              },
+              {
+                "objectName": "DefaultButton"
+              },
+              {
+                "objectName": "ReturnButton"
+              },
+              {
+                "objectName": "UnderstoodButton"
+              },
+              {
+                "objectName": "OptionsButton"
+              },
+              {
+                "objectName": "QuitButton"
+              },
+              {
+                "objectName": "MusicSlider"
+              },
+              {
+                "objectName": "SFXSlider"
+              },
+              {
+                "objectName": "FullscreenToggle"
+              }
+            ]
           },
           {
-            "objectName": "Title_2"
+            "folderName": "Background",
+            "children": [
+              {
+                "objectName": "background_menu"
+              },
+              {
+                "objectName": "IntroBackground"
+              },
+              {
+                "objectName": "BlackIntro"
+              }
+            ]
           },
           {
-            "objectName": "Disclaimer"
-          },
-          {
-            "objectName": "PleaseRead"
-          },
-          {
-            "objectName": "GameBy"
-          },
-          {
-            "objectName": "Music"
-          },
-          {
-            "objectName": "Volume"
-          },
-          {
-            "objectName": "Fullscreen"
-          },
-          {
-            "objectName": "background_1"
-          },
-          {
-            "objectName": "background_2"
-          },
-          {
-            "objectName": "background_menu"
-          },
-          {
-            "objectName": "StartButton"
-          },
-          {
-            "objectName": "QuitButton"
-          },
-          {
-            "objectName": "OptionsButton"
-          },
-          {
-            "objectName": "UnderstoodButton"
-          },
-          {
-            "objectName": "ReturnButton"
-          },
-          {
-            "objectName": "DefaultButton"
-          },
-          {
-            "objectName": "IntroBackground"
-          },
-          {
-            "objectName": "BlackIntro"
-          },
-          {
-            "objectName": "MusicSlider"
-          },
-          {
-            "objectName": "FullscreenToggle"
+            "folderName": "Texts",
+            "children": [
+              {
+                "objectName": "Fullscreen"
+              },
+              {
+                "objectName": "Volume"
+              },
+              {
+                "objectName": "Music"
+              },
+              {
+                "objectName": "GameBy"
+              },
+              {
+                "objectName": "PleaseRead"
+              },
+              {
+                "objectName": "Disclaimer"
+              },
+              {
+                "objectName": "Title_2"
+              },
+              {
+                "objectName": "Title_1"
+              }
+            ]
           }
         ]
       },
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "(Sliders Functionality)"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::IsBeingDragged"
+              },
+              "parameters": [
+                "SFXSlider",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SoundValue",
+                "=",
+                "SFXSlider.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "2",
+                "=",
+                "SoundValue"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::IsBeingDragged"
+              },
+              "parameters": [
+                "MusicSlider",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "MusicValue",
+                "=",
+                "MusicSlider.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "MusicValue"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "(Disclaimer)"
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2483,11 +2662,32 @@
           "actions": [
             {
               "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                "value": "PreloadSound"
               },
               "parameters": [
-                "QuitButton",
-                "no",
+                "",
+                "music\\Tsukihime Main Theme.mp3"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+              },
+              "parameters": [
+                "MusicSlider",
+                "=",
+                "MusicValue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+              },
+              "parameters": [
+                "SFXSlider",
+                "=",
+                "SoundValue",
                 ""
               ]
             },
@@ -2497,6 +2697,16 @@
               },
               "parameters": [
                 "StartButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "QuitButton",
                 "no",
                 ""
               ]
@@ -2537,7 +2747,7 @@
               },
               "parameters": [
                 "DefaultButton",
-                "no",
+                "",
                 ""
               ]
             },
@@ -2557,6 +2767,16 @@
               },
               "parameters": [
                 "MusicSlider",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+              },
+              "parameters": [
+                "SFXSlider",
                 "no",
                 ""
               ]
@@ -2595,6 +2815,20 @@
               },
               "parameters": [
                 "MusicSlider",
+                "Tween",
+                "\"d\"",
+                "0",
+                "\"linear\"",
+                "0.1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "SFXSlider",
                 "Tween",
                 "\"d\"",
                 "0",
@@ -2696,6 +2930,18 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "(Intro)"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2769,13 +3015,14 @@
             },
             {
               "type": {
-                "value": "PlaySound"
+                "value": "PlaySoundCanal"
               },
               "parameters": [
                 "",
                 "music\\Tsukihime Main Theme.mp3",
+                "1",
                 "yes",
-                "25",
+                "MusicValue",
                 "1"
               ]
             },
@@ -2784,7 +3031,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "3"
+                "1.60"
               ]
             },
             {
@@ -2878,6 +3125,18 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "(Options HUD)"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3046,6 +3305,20 @@
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
+                "SFXSlider",
+                "Tween",
+                "\"d\"",
+                "255",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
                 "FullscreenToggle",
                 "Tween",
                 "\"d\"",
@@ -3119,6 +3392,16 @@
             },
             {
               "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+              },
+              "parameters": [
+                "SFXSlider",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::Activate"
               },
               "parameters": [
@@ -3138,6 +3421,18 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": ""
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3214,6 +3509,20 @@
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
+                "SFXSlider",
+                "Tween",
+                "\"d\"",
+                "0",
+                "\"easeOutSine\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
                 "Fullscreen",
                 "Tween",
                 "\"d\"",
@@ -3277,6 +3586,16 @@
               },
               "parameters": [
                 "MusicSlider",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::Activate"
+              },
+              "parameters": [
+                "SFXSlider",
                 "no",
                 ""
               ]
@@ -3400,6 +3719,136 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "(Fullscreen Functionality)"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SpriteToggleSwitch::SpriteToggleSwitch::IsChecked"
+              },
+              "parameters": [
+                "FullscreenToggle",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "FullscreenState",
+                "True",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SpriteToggleSwitch::SpriteToggleSwitch::HasJustBeenUnchecked"
+              },
+              "parameters": [
+                "FullscreenToggle",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "FullscreenState",
+                "False",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "FullscreenState",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "FullscreenState",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "(Quit Functionality)"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -3420,6 +3869,129 @@
                 "value": "Quit"
               },
               "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "(Default Functionality)"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+              },
+              "parameters": [
+                "DefaultButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SoundValue",
+                "=",
+                "50"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "MusicValue",
+                "=",
+                "50"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "FullscreenState",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "MusicValue"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "2",
+                "=",
+                "SoundValue"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+              },
+              "parameters": [
+                "MusicSlider",
+                "=",
+                "MusicValue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+              },
+              "parameters": [
+                "SFXSlider",
+                "=",
+                "SoundValue",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeSoundCanal"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "MusicValue"
+              ]
+            },
+            {
+              "type": {
+                "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetChecked"
+              },
+              "parameters": [
+                "FullscreenToggle",
+                "no",
                 ""
               ]
             }
@@ -3676,6 +4248,356 @@
   "externalEvents": [],
   "eventsFunctionsExtensions": [
     {
+      "author": "@Bouh, @arthuro555",
+      "category": "User interface",
+      "extensionNamespace": "",
+      "fullName": "Cursor type",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWN1cnNvci1kZWZhdWx0LW91dGxpbmUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAuMDcsMTQuMjdDMTAuNTcsMTQuMDMgMTEuMTYsMTQuMjUgMTEuNCwxNC43NUwxMy43LDE5Ljc0TDE1LjUsMTguODlMMTMuMTksMTMuOTFDMTIuOTUsMTMuNDEgMTMuMTcsMTIuODEgMTMuNjcsMTIuNThMMTMuOTUsMTIuNUwxNi4yNSwxMi4wNUw4LDUuMTJWMTUuOUw5LjgyLDE0LjQzTDEwLjA3LDE0LjI3TTEzLjY0LDIxLjk3QzEzLjE0LDIyLjIxIDEyLjU0LDIyIDEyLjMxLDIxLjVMMTAuMTMsMTYuNzZMNy42MiwxOC43OEM3LjQ1LDE4LjkyIDcuMjQsMTkgNywxOUExLDEgMCAwLDEgNiwxOFYzQTEsMSAwIDAsMSA3LDJDNy4yNCwyIDcuNDcsMi4wOSA3LjY0LDIuMjNMNy42NSwyLjIyTDE5LjE0LDExLjg2QzE5LjU3LDEyLjIyIDE5LjYyLDEyLjg1IDE5LjI3LDEzLjI3QzE5LjEyLDEzLjQ1IDE4LjkxLDEzLjU3IDE4LjcsMTMuNjFMMTUuNTQsMTQuMjNMMTcuNzQsMTguOTZDMTgsMTkuNDYgMTcuNzYsMjAuMDUgMTcuMjYsMjAuMjhMMTMuNjQsMjEuOTdaIiAvPjwvc3ZnPg==",
+      "name": "CursorType",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/cursor-default-outline.svg",
+      "shortDescription": "Provides an action to change the type of the cursor, and a behavior to change the cursor when an object is hovered.",
+      "version": "0.0.6",
+      "description": [
+        "Provides an action to change the type of the cursor, and a behavior to change the cursor when an object is hovered.",
+        "",
+        "Find the list of cursors here: https://developer.mozilla.org/en-US/docs/Web/CSS/cursor"
+      ],
+      "origin": {
+        "identifier": "CursorType",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "mouse",
+        "cursor",
+        "pointer",
+        "javascript",
+        "desktop"
+      ],
+      "authorIds": [
+        "ZgrsWuRTAkXgeuPV9bo0zuEcA2w1",
+        "2OwwM8ToR9dx9RJ2sAKTcrLmCB92"
+      ],
+      "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
+      "eventsFunctions": [
+        {
+          "description": "Change the type of the cursor.",
+          "fullName": "Cursor type",
+          "functionType": "Action",
+          "name": "ChangeCursorType",
+          "sentence": "Change the cursor to _PARAM1_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Set as variable instead of directly setting as a CursorHover behavior can override it.\nBy using a variable, we ensure to be able to change it back to that \"default\" after the override is over."
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "__CursorType.DefaultCursor",
+                    "=",
+                    "GetArgumentAsString(\"cursor_type\")"
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// Reset to default cursor",
+                "runtimeScene.getGame().getRenderer().getCanvas().style.cursor =",
+                "    runtimeScene",
+                "        .getGame()",
+                "        .getVariables()",
+                "        .get(\"__CursorType\").getChild(\"DefaultCursor\")",
+                "        .getAsString();",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [
+            {
+              "defaultValue": "default",
+              "description": "The new cursor type",
+              "longDescription": "List of available cursors on https://developer.mozilla.org/en-US/docs/Web/CSS/cursor",
+              "name": "cursor_type",
+              "supplementaryInformation": "[\"auto\",\"default\",\"none\",\"context-menu\",\"help\",\"pointer\",\"progress\",\"wait\",\"cell\",\"crosshair\",\"text\",\"vertical-text\",\"alias\",\"copy\",\"move\",\"no-drop\",\"not-allowed\",\"grab\",\"grabbing\",\"all-scroll\",\"col-resize\",\"row-resize\",\"n-resize\",\"e-resize\",\"s-resize\",\"w-resize\",\"ne-resize\",\"nw-resize\",\"se-resize\",\"sw-resize\",\"ew-resize\",\"ns-resize\",\"nwse-resize\",\"zoom-in\",\"zoom-out\"]",
+              "type": "stringWithSelector"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "onScenePreEvents",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Reset ordering as the object with highest Z-Order might not exist anymore or be not be hovered anymore."
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "__CursorType.ZOrderSorting",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Set default value of the default cursor if the variable has just been created"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "__CursorType.DefaultCursor",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "__CursorType.DefaultCursor",
+                    "=",
+                    "\"default\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// Reset to default cursor",
+                "runtimeScene.getGame().getRenderer().getCanvas().style.cursor =",
+                "    runtimeScene",
+                "        .getGame()",
+                "        .getVariables()",
+                "        .get(\"__CursorType\").getChild(\"DefaultCursor\")",
+                "        .getAsString();",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Change the cursor appearence when the object is hovered (on Windows, macOS or Linux).",
+          "fullName": "Custom cursor when hovered",
+          "name": "CursorHover",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Check the z Order to ensure the cursor shown is the one from the foremost object "
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Plan"
+                      },
+                      "parameters": [
+                        "Object",
+                        ">",
+                        "GlobalVariable(__CursorType.ZOrderSorting)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "__CursorType.ZOrderSorting",
+                        "=",
+                        "Object.ZOrder()"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::JsCode",
+                      "inlineCode": [
+                        "// Set cursor to behavior property cursor_type",
+                        "objects.forEach(object => {",
+                        "",
+                        "    runtimeScene",
+                        "        .getGame()",
+                        "        .getRenderer()",
+                        "        .getCanvas()",
+                        "        .style",
+                        "        .cursor = object",
+                        "            .getBehavior(",
+                        "                eventsFunctionContext.getBehaviorName(\"Behavior\")",
+                        "            )",
+                        "            ._getcursor_type();",
+                        "});"
+                      ],
+                      "parameterObjects": "Object",
+                      "useStrict": true,
+                      "eventsSheetExpanded": true
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "CursorType::CursorHover",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "default",
+              "type": "Choice",
+              "label": "The cursor type",
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/CSS/cursor for a list of possible cursors.",
+              "group": "",
+              "extraInformation": [
+                "auto",
+                "default",
+                "none",
+                "context-menu",
+                "help",
+                "pointer",
+                "progress",
+                "wait",
+                "cell",
+                "crosshair",
+                "text",
+                "vertical-text",
+                "alias",
+                "copy",
+                "move",
+                "no-drop",
+                "not-allowed",
+                "grab",
+                "grabbing",
+                "all-scroll",
+                "col-resize",
+                "row-resize",
+                "n-resize",
+                "e-resize",
+                "s-resize",
+                "w-resize",
+                "ne-resize",
+                "nw-resize",
+                "se-resize",
+                "sw-resize",
+                "ew-resize",
+                "ns-resize",
+                "nwse-resize",
+                "zoom-in",
+                "zoom-out"
+              ],
+              "name": "cursor_type"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
+    {
       "author": "",
       "category": "User interface",
       "extensionNamespace": "",
@@ -3707,7 +4629,14 @@
         "gqDaZjCfevOOxBYkK6zlhtZnXCg1"
       ],
       "dependencies": [],
-      "globalVariables": [],
+      "globalVariables": [
+        {
+          "folded": true,
+          "name": "Fullscreen",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "sceneVariables": [],
       "eventsFunctions": [],
       "eventsBasedBehaviors": [
