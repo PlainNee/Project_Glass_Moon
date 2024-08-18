@@ -670,6 +670,78 @@
         "name": "characterassets\\Hisui_Pressed_Portrait.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characterassets/arcueid_hover.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characterassets\\arcueid_hover.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characterassets/arcueid_selected_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characterassets\\arcueid_selected_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characterassets/arcueid_selected_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characterassets\\arcueid_selected_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characterassets/akiha_hover.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characterassets\\akiha_hover.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characterassets/ciel_hover.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characterassets\\ciel_hover.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characterassets/hisui_hover.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characterassets\\hisui_hover.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characterassets/kohaku_hover.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characterassets\\kohaku_hover.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Bar.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -721,6 +793,12 @@
       "name": "Player2Character",
       "type": "string",
       "value": "Unselected"
+    },
+    {
+      "folded": true,
+      "name": "Player1Select",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -1118,7 +1196,7 @@
           "keepRatio": true,
           "layer": "ChangeScene",
           "locked": true,
-          "name": "UnderTheGlassMoon",
+          "name": "ReturnDialogue",
           "persistentUuid": "5f7c228d-9a20-4612-8f99-c6f45330fd62",
           "width": 1280,
           "x": 0,
@@ -2836,7 +2914,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "UnderTheGlassMoon",
+          "name": "ReturnDialogue",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
@@ -2959,7 +3037,7 @@
                 "objectName": "Title_1"
               },
               {
-                "objectName": "UnderTheGlassMoon"
+                "objectName": "ReturnDialogue"
               }
             ]
           }
@@ -3249,7 +3327,7 @@
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
-                "UnderTheGlassMoon",
+                "ReturnDialogue",
                 "Tween",
                 "\"d\"",
                 "0",
@@ -4873,7 +4951,7 @@
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
-                "UnderTheGlassMoon",
+                "ReturnDialogue",
                 "Tween",
                 "\"d\"",
                 "255",
@@ -4895,7 +4973,7 @@
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
-                "UnderTheGlassMoon",
+                "ReturnDialogue",
                 "Tween",
                 "\"d\"",
                 "0",
@@ -5258,7 +5336,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6897782140104511,
+        "zoomFactor": 0.4789341884535257,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -5269,7 +5347,7 @@
           "customSize": true,
           "depth": 10.18181818181818,
           "height": 720,
-          "layer": "StartLayer",
+          "layer": "Scene",
           "name": "ChangeScene",
           "persistentUuid": "4dd23c31-1a73-48f1-bcde-3b574a228c46",
           "width": 1280,
@@ -5341,13 +5419,11 @@
           "height": 115.24861878453038,
           "keepRatio": true,
           "layer": "",
-          "locked": true,
           "name": "ReturnButton",
           "persistentUuid": "98d214c8-6284-4992-bcbd-fd0b5eecce8f",
-          "sealed": true,
           "width": 140,
           "x": 572,
-          "y": 610,
+          "y": 615,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -5382,7 +5458,7 @@
           "persistentUuid": "692ba63c-798c-4485-b91d-e694e9d50810",
           "width": 201,
           "x": 542,
-          "y": 576,
+          "y": 581,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -5499,7 +5575,7 @@
           "persistentUuid": "856cd09d-2832-4c78-b592-8d515706fe26",
           "width": 120,
           "x": 405,
-          "y": 240,
+          "y": 245,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -5515,7 +5591,7 @@
           "persistentUuid": "55ed7d9e-dd92-4db3-87aa-695db735d248",
           "width": 0,
           "x": 755,
-          "y": 240,
+          "y": 245,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -5531,7 +5607,7 @@
           "persistentUuid": "1ff61860-e70b-4359-beb8-3c340cf6498c",
           "width": 0,
           "x": 580,
-          "y": 240,
+          "y": 245,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -5543,6 +5619,7 @@
           "depth": 0,
           "height": 15,
           "layer": "",
+          "locked": true,
           "name": "Deselect",
           "persistentUuid": "7bf67cb7-29e3-441b-96f7-b58f89c396ba",
           "width": 1280,
@@ -5563,7 +5640,7 @@
           "persistentUuid": "35af732d-7cd9-4585-ac59-12003c55990b",
           "width": 0,
           "x": 480,
-          "y": 395,
+          "y": 400,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -5579,8 +5656,207 @@
           "persistentUuid": "26a615a3-a20e-4cdc-9180-c3b00a3a6e93",
           "width": 0,
           "x": 680,
-          "y": 395,
+          "y": 400,
           "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 949.9665551839464,
+          "keepRatio": true,
+          "layer": "CharacterLayer",
+          "name": "ArcueidHovered",
+          "persistentUuid": "2435743f-5dbc-4820-81f7-626ad94a7ae5",
+          "width": 270,
+          "x": -499,
+          "y": 101,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 957.5435936315392,
+          "keepRatio": true,
+          "layer": "CharacterLayer",
+          "name": "AkihaHovered",
+          "persistentUuid": "c060bc1a-6196-49c7-ab96-fc9287bae087",
+          "width": 300,
+          "x": -467,
+          "y": 173,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 915.073891625616,
+          "keepRatio": true,
+          "layer": "CharacterLayer",
+          "name": "CielHovered",
+          "persistentUuid": "7af90b6a-b7de-475c-a62a-ab6a67c332e9",
+          "width": 180,
+          "x": -356,
+          "y": 181,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 904.6681175190427,
+          "keepRatio": true,
+          "layer": "CharacterLayer",
+          "name": "KohakuHovered",
+          "persistentUuid": "6340f66c-6a00-4dff-b819-c3c5351d4545",
+          "width": 210,
+          "x": -492,
+          "y": 163,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 905.9646539027988,
+          "keepRatio": true,
+          "layer": "CharacterLayer",
+          "name": "HisuiHovered",
+          "persistentUuid": "9990b308-b6a9-472c-94d6-327bbab699ab",
+          "width": 300,
+          "x": -560,
+          "y": 83,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1.0000000000000002,
+          "height": 50,
+          "layer": "NameBar",
+          "locked": true,
+          "name": "Bar",
+          "persistentUuid": "102b70ac-4814-4148-a3f5-cd85b6a797ca",
+          "width": 350,
+          "x": 0,
+          "y": 90,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "layer": "NameBar",
+          "name": "Bar2",
+          "persistentUuid": "14f4390b-e5d0-4af5-ae8a-96bb17eb366b",
+          "width": 350,
+          "x": 930,
+          "y": 90,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0.9943181818181817,
+          "height": 38.77840909090908,
+          "keepRatio": true,
+          "layer": "CharacterLayer",
+          "name": "Hisui",
+          "persistentUuid": "8bf64bbf-4d84-431b-b60c-0db5db48b1b1",
+          "width": 350,
+          "x": -372,
+          "y": -142,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 38.78,
+          "layer": "CharacterLayer",
+          "name": "Kohaku",
+          "persistentUuid": "27839a5c-c20d-443d-ac5b-91198837e826",
+          "width": 350,
+          "x": 154,
+          "y": -155,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 38.78,
+          "layer": "CharacterLayer",
+          "name": "Arcueid",
+          "persistentUuid": "970e7b09-7995-4189-a16a-31938c9d3607",
+          "width": 350,
+          "x": 11,
+          "y": -122,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 38.78,
+          "layer": "CharacterLayer",
+          "name": "Ciel",
+          "persistentUuid": "3e9ce496-022a-4eb2-b7f2-76247f11578d",
+          "width": 350,
+          "x": -226,
+          "y": -105,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 38.779999999999994,
+          "layer": "CharacterLayer",
+          "name": "Akiha_Tohno",
+          "persistentUuid": "235ad5cc-b2ed-4e34-b30b-b9ceeeea86a3",
+          "width": 350,
+          "x": 706,
+          "y": -125,
+          "zOrder": 32,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5987,7 +6263,7 @@
           "string": "It's time...",
           "font": "raleway.regular.ttf",
           "textAlignment": "center",
-          "characterSize": 60,
+          "characterSize": 30,
           "color": {
             "b": 255,
             "g": 247,
@@ -6010,7 +6286,7 @@
             "text": "It's time...",
             "font": "raleway.regular.ttf",
             "textAlignment": "center",
-            "characterSize": 60,
+            "characterSize": 30,
             "color": "219;247;255"
           }
         },
@@ -7184,11 +7460,989 @@
             "characterSize": 15,
             "color": "219;247;255"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "ArcueidHovered",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "characterassets\\arcueid_hover.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 0
+                          },
+                          {
+                            "x": 1195,
+                            "y": 0
+                          },
+                          {
+                            "x": 1195,
+                            "y": 4207
+                          },
+                          {
+                            "x": 1,
+                            "y": 4207
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "ArcueidSelected",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "characterassets\\arcueid_selected_1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 861,
+                            "y": 1
+                          },
+                          {
+                            "x": 861,
+                            "y": 4227
+                          },
+                          {
+                            "x": 1,
+                            "y": 4227
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "characterassets\\arcueid_selected_2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 861,
+                            "y": 1
+                          },
+                          {
+                            "x": 861,
+                            "y": 4227
+                          },
+                          {
+                            "x": 1,
+                            "y": 4227
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "AkihaHovered",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "characterassets\\akiha_hover.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 1317,
+                            "y": 1
+                          },
+                          {
+                            "x": 1317,
+                            "y": 4209
+                          },
+                          {
+                            "x": 1,
+                            "y": 4209
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "AkihaSelected",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "characterassets\\arcueid_selected_1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 861,
+                            "y": 1
+                          },
+                          {
+                            "x": 861,
+                            "y": 4227
+                          },
+                          {
+                            "x": 1,
+                            "y": 4227
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "characterassets\\arcueid_selected_2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 861,
+                            "y": 1
+                          },
+                          {
+                            "x": 861,
+                            "y": 4227
+                          },
+                          {
+                            "x": 1,
+                            "y": 4227
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "CielHovered",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "characterassets\\ciel_hover.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 811,
+                            "y": 1
+                          },
+                          {
+                            "x": 811,
+                            "y": 4127
+                          },
+                          {
+                            "x": 1,
+                            "y": 4127
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "KohakuHovered",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "characterassets\\kohaku_hover.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 918,
+                            "y": 1
+                          },
+                          {
+                            "x": 918,
+                            "y": 3958
+                          },
+                          {
+                            "x": 1,
+                            "y": 3958
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HisuiHovered",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "characterassets\\hisui_hover.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 1357,
+                            "y": 1
+                          },
+                          {
+                            "x": 1357,
+                            "y": 4100
+                          },
+                          {
+                            "x": 1,
+                            "y": 4100
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Bar",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Bar.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 23
+                          },
+                          {
+                            "x": 250,
+                            "y": 23
+                          },
+                          {
+                            "x": 250,
+                            "y": 29
+                          },
+                          {
+                            "x": 0,
+                            "y": 29
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Bar2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Bar.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 23
+                          },
+                          {
+                            "x": 250,
+                            "y": 23
+                          },
+                          {
+                            "x": 250,
+                            "y": 29
+                          },
+                          {
+                            "x": 0,
+                            "y": 29
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "NewText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Text",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Hisui",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Hisui\n",
+          "font": "raleway.regular.ttf",
+          "textAlignment": "right",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 247,
+            "r": 219
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "0;52;117",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Hisui\n",
+            "font": "raleway.regular.ttf",
+            "textAlignment": "right",
+            "characterSize": 40,
+            "color": "219;247;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Kohaku",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Kohaku",
+          "font": "raleway.regular.ttf",
+          "textAlignment": "right",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 247,
+            "r": 219
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "0;52;117",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Kohaku",
+            "font": "raleway.regular.ttf",
+            "textAlignment": "right",
+            "characterSize": 40,
+            "color": "219;247;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Arcueid",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Arcueid",
+          "font": "raleway.regular.ttf",
+          "textAlignment": "right",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 247,
+            "r": 219
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "0;52;117",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Arcueid",
+            "font": "raleway.regular.ttf",
+            "textAlignment": "right",
+            "characterSize": 40,
+            "color": "219;247;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Ciel",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Ciel",
+          "font": "raleway.regular.ttf",
+          "textAlignment": "right",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 247,
+            "r": 219
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "0;52;117",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Ciel",
+            "font": "raleway.regular.ttf",
+            "textAlignment": "right",
+            "characterSize": 40,
+            "color": "219;247;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Akiha_Tohno",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Akiha Tohno",
+          "font": "raleway.regular.ttf",
+          "textAlignment": "right",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 247,
+            "r": 219
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "0;52;117",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Akiha Tohno",
+            "font": "raleway.regular.ttf",
+            "textAlignment": "right",
+            "characterSize": 40,
+            "color": "219;247;255"
+          }
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
+          {
+            "folderName": "Character",
+            "children": [
+              {
+                "objectName": "ArcueidHovered"
+              },
+              {
+                "objectName": "AkihaHovered"
+              },
+              {
+                "objectName": "CielHovered"
+              },
+              {
+                "objectName": "HisuiHovered"
+              },
+              {
+                "objectName": "KohakuHovered"
+              },
+              {
+                "objectName": "ArcueidSelected"
+              },
+              {
+                "objectName": "AkihaSelected"
+              }
+            ]
+          },
           {
             "folderName": "Background",
             "children": [
@@ -7242,6 +8496,21 @@
                 "objectName": "ItsTime"
               },
               {
+                "objectName": "Hisui"
+              },
+              {
+                "objectName": "Kohaku"
+              },
+              {
+                "objectName": "Arcueid"
+              },
+              {
+                "objectName": "Ciel"
+              },
+              {
+                "objectName": "Akiha_Tohno"
+              },
+              {
                 "objectName": "Character_Select"
               },
               {
@@ -7260,6 +8529,15 @@
                 "objectName": "Rules3"
               }
             ]
+          },
+          {
+            "objectName": "Bar"
+          },
+          {
+            "objectName": "Bar2"
+          },
+          {
+            "objectName": "NewText"
           }
         ]
       },
@@ -7286,6 +8564,368 @@
                 "Opacity",
                 "=",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "ArcueidHovered",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "AkihaHovered",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "CielHovered",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "KohakuHovered",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "HisuiHovered",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "AkihaHovered",
+                "=",
+                "0",
+                "=",
+                "140"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "ArcueidSelected",
+                "=",
+                "0",
+                "=",
+                "140"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "CielHovered",
+                "=",
+                "45",
+                "=",
+                "140"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "KohakuHovered",
+                "=",
+                "30",
+                "=",
+                "145"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "HisuiHovered",
+                "=",
+                "-20",
+                "=",
+                "130"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Bar",
+                "=",
+                "-20",
+                "=",
+                "90"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Bar2",
+                "=",
+                "950",
+                "=",
+                "90"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Akiha_Tohno",
+                "=",
+                "-20",
+                "=",
+                "70"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Arcueid",
+                "=",
+                "-20",
+                "=",
+                "70"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Ciel",
+                "=",
+                "-20",
+                "=",
+                "70"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Kohaku",
+                "=",
+                "-20",
+                "=",
+                "70"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Hisui",
+                "=",
+                "-20",
+                "=",
+                "70"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Bar",
+                "Tween",
+                "\"c\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Bar2",
+                "Tween",
+                "\"c\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Akiha_Tohno",
+                "Tween",
+                "\"c\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Arcueid",
+                "Tween",
+                "\"c\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Ciel",
+                "Tween",
+                "\"c\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Hisui",
+                "Tween",
+                "\"c\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Kohaku",
+                "Tween",
+                "\"c\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "ArcueidHovered",
+                "Tween",
+                "\"c\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "AkihaHovered",
+                "Tween",
+                "\"c\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "CielHovered",
+                "Tween",
+                "\"c\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "KohakuHovered",
+                "Tween",
+                "\"c\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "HisuiHovered",
+                "Tween",
+                "\"c\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
               ]
             },
             {
@@ -7681,7 +9321,22 @@
                 "\"a\"",
                 "255",
                 "\"easeOutCubic\"",
-                "1",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "AkihaPortrait",
+                "Tween",
+                "\"b\"",
+                "755",
+                "240",
+                "\"easeOutCubic\"",
+                "0.5",
                 "no"
               ]
             },
@@ -7695,7 +9350,22 @@
                 "\"a\"",
                 "255",
                 "\"easeOutCubic\"",
-                "1",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "CielPortrait",
+                "Tween",
+                "\"b\"",
+                "405",
+                "240",
+                "\"easeOutCubic\"",
+                "0.5",
                 "no"
               ]
             },
@@ -7709,7 +9379,22 @@
                 "\"a\"",
                 "255",
                 "\"easeOutCubic\"",
-                "1",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "ArcueidPortrait",
+                "Tween",
+                "\"b\"",
+                "580",
+                "240",
+                "\"easeOutCubic\"",
+                "0.5",
                 "no"
               ]
             },
@@ -7723,7 +9408,22 @@
                 "\"a\"",
                 "255",
                 "\"easeOutCubic\"",
-                "1",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "KohakuPortrait",
+                "Tween",
+                "\"b\"",
+                "480",
+                "395",
+                "\"easeOutCubic\"",
+                "0.5",
                 "no"
               ]
             },
@@ -7737,7 +9437,22 @@
                 "\"a\"",
                 "255",
                 "\"easeOutCubic\"",
-                "1",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "HisuiPortrait",
+                "Tween",
+                "\"b\"",
+                "680",
+                "395",
+                "\"easeOutCubic\"",
+                "0.5",
                 "no"
               ]
             },
@@ -7823,6 +9538,64 @@
                 "\"b\"",
                 "572",
                 "610",
+                "\"easeOutCubic\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Bar",
+                "Tween",
+                "\"a\"",
+                "255",
+                "\"easeOutCubic\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Bar",
+                "Tween",
+                "\"b\"",
+                "0",
+                "90",
+                "\"easeOutCubic\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Bar2",
+                "Tween",
+                "\"a\"",
+                "255",
+                "\"easeOutCubic\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Bar2",
+                "Tween",
+                "\"b\"",
+                "930",
+                "90",
                 "\"easeOutCubic\"",
                 "1",
                 "no"
@@ -8822,6 +10595,1446 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "AkihaPortrait",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Player1Select",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Arcueid",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Ciel",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Kohaku",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Hisui",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "ArcueidHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "CielHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "KohakuHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "HisuiHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Arcueid",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Ciel",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Hisui",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Kohaku",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "ArcueidHovered",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "CielHovered",
+                    "Tween",
+                    "\"E\"",
+                    "45",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "KohakuHovered",
+                    "Tween",
+                    "\"E\"",
+                    "30",
+                    "145",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "HisuiHovered",
+                    "Tween",
+                    "\"E\"",
+                    "-20",
+                    "130",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "AkihaHovered",
+                    "Tween",
+                    "\"c\"",
+                    "255",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "AkihaHovered",
+                    "Tween",
+                    "\"E\"",
+                    "20",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Akiha_Tohno",
+                    "Tween",
+                    "\"c\"",
+                    "255",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Akiha_Tohno",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "70",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "ArcueidPortrait",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Player1Select",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Akiha_Tohno",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Ciel",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Hisui",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Kohaku",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "AkihaHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "CielHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "KohakuHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "HisuiHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Akiha_Tohno",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Ciel",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Hisui",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Kohaku",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "AkihaHovered",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "CielHovered",
+                    "Tween",
+                    "\"E\"",
+                    "45",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "KohakuHovered",
+                    "Tween",
+                    "\"E\"",
+                    "30",
+                    "145",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "HisuiHovered",
+                    "Tween",
+                    "\"E\"",
+                    "-20",
+                    "130",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "ArcueidHovered",
+                    "Tween",
+                    "\"c\"",
+                    "255",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "ArcueidHovered",
+                    "Tween",
+                    "\"E\"",
+                    "20",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Arcueid",
+                    "Tween",
+                    "\"c\"",
+                    "255",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Arcueid",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "70",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "CielPortrait",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Player1Select",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Arcueid",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Akiha_Tohno",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Hisui",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Kohaku",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "ArcueidHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "AkihaHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "KohakuHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "HisuiHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Arcueid",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Hisui",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Akiha_Tohno",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Kohaku",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "AkihaHovered",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "ArcueidHovered",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "HisuiHovered",
+                    "Tween",
+                    "\"E\"",
+                    "-20",
+                    "130",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "KohakuHovered",
+                    "Tween",
+                    "\"E\"",
+                    "30",
+                    "145",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "CielHovered",
+                    "Tween",
+                    "\"c\"",
+                    "255",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "CielHovered",
+                    "Tween",
+                    "\"E\"",
+                    "65",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Ciel",
+                    "Tween",
+                    "\"c\"",
+                    "255",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Ciel",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "70",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "KohakuPortrait",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Player1Select",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Arcueid",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Ciel",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Akiha_Tohno",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Hisui",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "ArcueidHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "AkihaHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "CielHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "HisuiHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Arcueid",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Ciel",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Hisui",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Akiha_Tohno",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "AkihaHovered",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "ArcueidHovered",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "CielHovered",
+                    "Tween",
+                    "\"E\"",
+                    "45",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "HisuiHovered",
+                    "Tween",
+                    "\"E\"",
+                    "-20",
+                    "130",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "KohakuHovered",
+                    "Tween",
+                    "\"c\"",
+                    "255",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "KohakuHovered",
+                    "Tween",
+                    "\"E\"",
+                    "50",
+                    "145",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Kohaku",
+                    "Tween",
+                    "\"c\"",
+                    "255",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Kohaku",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "70",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "HisuiPortrait",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Player1Select",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Arcueid",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Ciel",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Kohaku",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Akiha_Tohno",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "ArcueidHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "AkihaHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "CielHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "KohakuHovered",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Arcueid",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Akiha_Tohno",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Ciel",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Kohaku",
+                    "=",
+                    "-20",
+                    "=",
+                    "70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "AkihaHovered",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "ArcueidHovered",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "CielHovered",
+                    "Tween",
+                    "\"E\"",
+                    "45",
+                    "140",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "KohakuHovered",
+                    "Tween",
+                    "\"E\"",
+                    "30",
+                    "145",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "HisuiHovered",
+                    "Tween",
+                    "\"c\"",
+                    "255",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "HisuiHovered",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "130",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Hisui",
+                    "Tween",
+                    "\"c\"",
+                    "255",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Hisui",
+                    "Tween",
+                    "\"E\"",
+                    "0",
+                    "70",
+                    "\"linear\"",
+                    "0.1",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -8851,6 +12064,39 @@
               "width": 0
             }
           ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "CharacterLayer",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
@@ -8913,7 +12159,40 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "StartLayer",
+          "name": "NameBar",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Scene",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
