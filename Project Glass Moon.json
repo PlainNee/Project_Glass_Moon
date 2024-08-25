@@ -1315,6 +1315,45 @@
         "name": "characterassets\\Lose\\Lose_Player2\\5.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "music/Player1Move.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music\\Player1Move.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "music/Player2Move.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music\\Player2Move.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "music/Start.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "music\\Start.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "draw.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "draw.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -5989,7 +6028,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.41943397827590856,
+        "zoomFactor": 0.5290357402156871,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -7690,7 +7729,7 @@
               "type": "Tween::TweenBehavior"
             }
           ],
-          "string": "The player who gets the \nfirst turn alternates every round, \nwhether win or draw.",
+          "string": "The player who moved the last \nround would be the second one \nwho'll move the next round",
           "font": "raleway.regular.ttf",
           "textAlignment": "center",
           "characterSize": 20,
@@ -7713,7 +7752,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "The player who gets the \nfirst turn alternates every round, \nwhether win or draw.",
+            "text": "The player who moved the last \nround would be the second one \nwho'll move the next round",
             "font": "raleway.regular.ttf",
             "textAlignment": "center",
             "characterSize": 20,
@@ -10464,6 +10503,66 @@
             "characterSize": 40,
             "color": "219;247;255"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "draw",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "draw.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 0
+                          },
+                          {
+                            "x": 1280,
+                            "y": 720
+                          },
+                          {
+                            "x": 0,
+                            "y": 720
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -10649,6 +10748,9 @@
           },
           {
             "objectName": "Bar"
+          },
+          {
+            "objectName": "draw"
           },
           {
             "objectName": "Bar2"
@@ -22050,7 +22152,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.41943397827590617,
+        "zoomFactor": 0.5468750000000004,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -22060,6 +22162,18 @@
           "name": "win",
           "type": "number",
           "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Cutscene",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "folded": true,
+          "name": "draw",
+          "type": "boolean",
+          "value": false
         },
         {
           "folded": true,
@@ -22118,25 +22232,21 @@
           "name": "Player2_Lose",
           "type": "string",
           "value": "0"
+        },
+        {
+          "folded": true,
+          "name": "Player1WinCount",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Player2WinCount",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 26.25,
-          "height": 115.25,
-          "layer": "GameLayer",
-          "name": "ReturnButton",
-          "persistentUuid": "a7c35fbc-af4d-404e-9e27-e7297564222a",
-          "width": 140,
-          "x": 568,
-          "y": 617,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
         {
           "angle": 0,
           "customSize": true,
@@ -22199,24 +22309,8 @@
           "persistentUuid": "fa6ab4c9-e16f-4daf-a6e5-64e6a556cf3b",
           "width": 150,
           "x": 415,
-          "y": 60,
+          "y": 170,
           "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "GameLayer",
-          "name": "Reset_Test",
-          "persistentUuid": "9147dfd7-b1ad-4996-9ff7-8eb270990f17",
-          "width": 0,
-          "x": 1049,
-          "y": 261,
-          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -22232,7 +22326,7 @@
           "persistentUuid": "ade5fa2e-c5ee-4d04-93ce-eb7da3449be4",
           "width": 150,
           "x": 565,
-          "y": 60,
+          "y": 170,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -22257,7 +22351,7 @@
           "persistentUuid": "791177b1-ea6d-4262-9c7c-5ea81cc77897",
           "width": 150,
           "x": 715,
-          "y": 60,
+          "y": 170,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -22274,7 +22368,7 @@
           "persistentUuid": "7785d051-d3c1-4496-8190-b9901dda62e2",
           "width": 150,
           "x": 415,
-          "y": 210,
+          "y": 320,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -22291,7 +22385,7 @@
           "persistentUuid": "ed4aed08-7a9a-46b6-ad0c-5557ce038db2",
           "width": 150,
           "x": 565,
-          "y": 210,
+          "y": 320,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -22308,7 +22402,7 @@
           "persistentUuid": "227d98b9-8e31-4d6f-baab-f79575945f79",
           "width": 150,
           "x": 715,
-          "y": 210,
+          "y": 320,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -22325,7 +22419,7 @@
           "persistentUuid": "f6389fc3-9d36-4fa0-ad4f-139276e3c78f",
           "width": 150,
           "x": 415,
-          "y": 360,
+          "y": 470,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -22342,7 +22436,7 @@
           "persistentUuid": "8daa2afe-46f4-434c-866a-f67f514bc0cc",
           "width": 150,
           "x": 565,
-          "y": 360,
+          "y": 470,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -22359,7 +22453,7 @@
           "persistentUuid": "38b06bc4-deaf-4fdc-96fe-1f9c385235ec",
           "width": 150,
           "x": 715,
-          "y": 360,
+          "y": 470,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -22367,15 +22461,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1.7320703653585925,
+          "height": 91.79972936400543,
           "keepRatio": true,
           "layer": "GameLayer",
           "name": "WinConditions",
           "persistentUuid": "b69adca5-4edd-4729-8de0-56bc79540f81",
-          "width": 0,
-          "x": 524,
-          "y": 565,
+          "width": 1280,
+          "x": 0,
+          "y": 88,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -22409,6 +22504,119 @@
           "x": 909,
           "y": 65,
           "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 65,
+          "layer": "GameLayer",
+          "name": "Wins",
+          "persistentUuid": "90dbdaa6-9c83-4678-9136-9891a5ccea68",
+          "width": 1279.9999999999998,
+          "x": 0,
+          "y": 650,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0.7352941176470589,
+          "height": 40,
+          "layer": "GameLayer",
+          "name": "Player1Wins",
+          "persistentUuid": "e6fa621d-605e-4be1-b55b-b59928ba533b",
+          "width": 150,
+          "x": 415,
+          "y": 650,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 40,
+          "layer": "GameLayer",
+          "name": "Player2Wins",
+          "persistentUuid": "41519f02-4023-4811-9144-3f58c5757106",
+          "width": 150,
+          "x": 715,
+          "y": 650,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 60,
+          "layer": "GameLayer",
+          "name": "Bar",
+          "persistentUuid": "247a0286-0047-4d2b-a1bf-90cddf83f07b",
+          "width": 450,
+          "x": 415,
+          "y": 612,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1.7655172413793103,
+          "height": 93.57241379310341,
+          "keepRatio": true,
+          "layer": "GameLayer",
+          "name": "Player1Turn",
+          "persistentUuid": "583ea867-63d8-48cd-952f-522fa8faf74f",
+          "width": 1280,
+          "x": 0,
+          "y": 88,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 60,
+          "layer": "GameLayer",
+          "name": "Bar2",
+          "persistentUuid": "429e53ea-c0ac-4c2e-8a25-2343c8146a0a",
+          "width": 450,
+          "x": 415,
+          "y": 116,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 53,
+          "layer": "GameLayer",
+          "name": "Player2Turn",
+          "persistentUuid": "97af7ce2-1fc9-4a2b-befe-0ce42488e758",
+          "width": 1280,
+          "x": 0,
+          "y": 88,
+          "zOrder": 26,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -26022,7 +26230,7 @@
           ],
           "string": "PlaceHold",
           "font": "raleway.regular.ttf",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 40,
           "color": {
             "b": 255,
@@ -26031,7 +26239,7 @@
           },
           "content": {
             "bold": false,
-            "isOutlineEnabled": false,
+            "isOutlineEnabled": true,
             "isShadowEnabled": true,
             "italic": false,
             "outlineColor": "255;255;255",
@@ -26045,7 +26253,7 @@
             "underlined": false,
             "text": "PlaceHold",
             "font": "raleway.regular.ttf",
-            "textAlignment": "left",
+            "textAlignment": "center",
             "characterSize": 40,
             "color": "219;247;255"
           }
@@ -28003,6 +28211,366 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Wins",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Wins",
+          "font": "raleway.regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 247,
+            "r": 219
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Wins",
+            "font": "raleway.regular.ttf",
+            "textAlignment": "center",
+            "characterSize": 40,
+            "color": "219;247;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Player1Wins",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "0",
+          "font": "raleway.regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 247,
+            "r": 219
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "0",
+            "font": "raleway.regular.ttf",
+            "textAlignment": "center",
+            "characterSize": 40,
+            "color": "219;247;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Player2Wins",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "0",
+          "font": "raleway.regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 247,
+            "r": 219
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "0",
+            "font": "raleway.regular.ttf",
+            "textAlignment": "center",
+            "characterSize": 40,
+            "color": "219;247;255"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Bar",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Bar.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 23
+                          },
+                          {
+                            "x": 250,
+                            "y": 23
+                          },
+                          {
+                            "x": 250,
+                            "y": 29
+                          },
+                          {
+                            "x": 0,
+                            "y": 29
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Player1Turn",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "PlaceHold",
+          "font": "raleway.regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 247,
+            "r": 219
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "PlaceHold",
+            "font": "raleway.regular.ttf",
+            "textAlignment": "center",
+            "characterSize": 40,
+            "color": "219;247;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Player2Turn",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "PlaceHold",
+          "font": "raleway.regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 247,
+            "r": 219
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "PlaceHold",
+            "font": "raleway.regular.ttf",
+            "textAlignment": "center",
+            "characterSize": 40,
+            "color": "219;247;255"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Bar2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Bar.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 23
+                          },
+                          {
+                            "x": 250,
+                            "y": 23
+                          },
+                          {
+                            "x": 250,
+                            "y": 29
+                          },
+                          {
+                            "x": 0,
+                            "y": 29
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -28050,6 +28618,18 @@
             "objectName": "WinConditions"
           },
           {
+            "objectName": "Player1Turn"
+          },
+          {
+            "objectName": "Player2Turn"
+          },
+          {
+            "objectName": "Player1Wins"
+          },
+          {
+            "objectName": "Player2Wins"
+          },
+          {
             "objectName": "Player_1"
           },
           {
@@ -28057,6 +28637,9 @@
           },
           {
             "objectName": "Player_2text"
+          },
+          {
+            "objectName": "Wins"
           },
           {
             "objectName": "ReturnButton"
@@ -28069,6 +28652,12 @@
           },
           {
             "objectName": "Transition"
+          },
+          {
+            "objectName": "Bar"
+          },
+          {
+            "objectName": "Bar2"
           }
         ]
       },
@@ -28086,6 +28675,7 @@
           "comment": "Intro"
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -28098,6 +28688,26 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "Player1Character",
+                "=",
+                "\"Arcueid\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "Player2Character",
+                "=",
+                "\"Kohaku\""
+              ]
+            },
             {
               "type": {
                 "value": "PrioritizeLoadingOfScene"
@@ -28114,6 +28724,33 @@
               "parameters": [
                 "",
                 "music\\Before the Dawn (Main Menu Theme)  Melty Blood_ Type Lumina [OST].mp3"
+              ]
+            },
+            {
+              "type": {
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "music\\Player1Move.mp3"
+              ]
+            },
+            {
+              "type": {
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "music\\Player2Move.mp3"
+              ]
+            },
+            {
+              "type": {
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "music\\Start.mp3"
               ]
             },
             {
@@ -28185,7 +28822,6 @@
               "comment": "IntroReady\n"
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [],
@@ -28200,6 +28836,17 @@
                       },
                       "parameters": [
                         "WinConditions",
+                        "Opacity",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Wins",
                         "Opacity",
                         "=",
                         "0"
@@ -28388,6 +29035,184 @@
                         "0.01",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "Wins",
+                        "Tween",
+                        "\"Player\"",
+                        "0",
+                        "670",
+                        "\"linear\"",
+                        "0.01",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Player1Turn",
+                        "Opacity",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Player2Turn",
+                        "Opacity",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Bar",
+                        "Opacity",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Bar2",
+                        "Opacity",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Player1Wins",
+                        "Opacity",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Player2Wins",
+                        "Opacity",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "Bar",
+                        "Tween",
+                        "\"Player\"",
+                        "415",
+                        "632",
+                        "\"linear\"",
+                        "0.01",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "Bar2",
+                        "Tween",
+                        "\"Player\"",
+                        "415",
+                        "136",
+                        "\"linear\"",
+                        "0.01",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "Player1Wins",
+                        "Tween",
+                        "\"Player\"",
+                        "415",
+                        "670",
+                        "\"linear\"",
+                        "0.01",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "Player2Wins",
+                        "Tween",
+                        "\"Player\"",
+                        "715",
+                        "670",
+                        "\"linear\"",
+                        "0.01",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Player1Turn",
+                        "Text",
+                        "=",
+                        "Player1Character + \"'s Turn\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Player2Turn",
+                        "Text",
+                        "=",
+                        "Player2Character + \"'s Turn\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "Player1Turn",
+                        "Tween",
+                        "\"Player\"",
+                        "0",
+                        "108",
+                        "\"linear\"",
+                        "0.01",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -28404,7 +29229,7 @@
                         "=",
                         "415",
                         "=",
-                        "80"
+                        "190"
                       ]
                     },
                     {
@@ -28416,7 +29241,7 @@
                         "=",
                         "565",
                         "=",
-                        "80"
+                        "190"
                       ]
                     },
                     {
@@ -28428,7 +29253,7 @@
                         "=",
                         "715",
                         "=",
-                        "80"
+                        "190"
                       ]
                     },
                     {
@@ -28440,7 +29265,7 @@
                         "=",
                         "415",
                         "=",
-                        "230"
+                        "340"
                       ]
                     },
                     {
@@ -28452,7 +29277,7 @@
                         "=",
                         "565",
                         "=",
-                        "230"
+                        "340"
                       ]
                     },
                     {
@@ -28464,7 +29289,7 @@
                         "=",
                         "715",
                         "=",
-                        "230"
+                        "340"
                       ]
                     },
                     {
@@ -28476,7 +29301,7 @@
                         "=",
                         "415",
                         "=",
-                        "380"
+                        "490"
                       ]
                     },
                     {
@@ -28488,7 +29313,7 @@
                         "=",
                         "565",
                         "=",
-                        "380"
+                        "490"
                       ]
                     },
                     {
@@ -28500,7 +29325,7 @@
                         "=",
                         "715",
                         "=",
-                        "380"
+                        "490"
                       ]
                     }
                   ]
@@ -29502,7 +30327,7 @@
                     "Tween",
                     "\"NodePosition\"",
                     "415",
-                    "60",
+                    "170",
                     "\"linear\"",
                     "0.5",
                     ""
@@ -29517,7 +30342,7 @@
                     "Tween",
                     "\"NodePosition\"",
                     "565",
-                    "60",
+                    "170",
                     "\"linear\"",
                     "0.5",
                     ""
@@ -29532,7 +30357,7 @@
                     "Tween",
                     "\"NodePosition\"",
                     "715",
-                    "60",
+                    "170",
                     "\"linear\"",
                     "0.5",
                     ""
@@ -29547,7 +30372,7 @@
                     "Tween",
                     "\"NodePosition\"",
                     "415",
-                    "210",
+                    "320",
                     "\"linear\"",
                     "0.5",
                     ""
@@ -29562,7 +30387,7 @@
                     "Tween",
                     "\"NodePosition\"",
                     "565",
-                    "210",
+                    "320",
                     "\"linear\"",
                     "0.5",
                     ""
@@ -29577,7 +30402,7 @@
                     "Tween",
                     "\"NodePosition\"",
                     "715",
-                    "210",
+                    "320",
                     "\"linear\"",
                     "0.5",
                     ""
@@ -29592,7 +30417,7 @@
                     "Tween",
                     "\"NodePosition\"",
                     "415",
-                    "360",
+                    "470",
                     "\"linear\"",
                     "0.5",
                     ""
@@ -29607,7 +30432,7 @@
                     "Tween",
                     "\"NodePosition\"",
                     "565",
-                    "360",
+                    "470",
                     "\"linear\"",
                     "0.5",
                     ""
@@ -29622,9 +30447,214 @@
                     "Tween",
                     "\"NodePosition\"",
                     "715",
-                    "360",
+                    "470",
                     "\"linear\"",
                     "0.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2.75"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Cutscene",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Wins",
+                    "Tween",
+                    "\"Node\"",
+                    "255",
+                    "\"easeInQuad\"",
+                    "0.5",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Player1Wins",
+                    "Tween",
+                    "\"Node\"",
+                    "255",
+                    "\"easeInQuad\"",
+                    "0.5",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Player2Wins",
+                    "Tween",
+                    "\"Node\"",
+                    "255",
+                    "\"easeInQuad\"",
+                    "0.5",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Bar",
+                    "Tween",
+                    "\"Node\"",
+                    "255",
+                    "\"easeInQuad\"",
+                    "0.5",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Bar2",
+                    "Tween",
+                    "\"Node\"",
+                    "255",
+                    "\"easeInQuad\"",
+                    "0.5",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Wins",
+                    "Tween",
+                    "\"NodePosition\"",
+                    "0",
+                    "650",
+                    "\"linear\"",
+                    "0.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Player1Wins",
+                    "Tween",
+                    "\"NodePosition\"",
+                    "415",
+                    "650",
+                    "\"linear\"",
+                    "0.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Player2Wins",
+                    "Tween",
+                    "\"NodePosition\"",
+                    "715",
+                    "650",
+                    "\"linear\"",
+                    "0.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Bar",
+                    "Tween",
+                    "\"NodePosition\"",
+                    "415",
+                    "602",
+                    "\"linear\"",
+                    "0.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Bar2",
+                    "Tween",
+                    "\"NodePosition\"",
+                    "415",
+                    "116",
+                    "\"linear\"",
+                    "0.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Player1Turn",
+                    "Tween",
+                    "\"Node\"",
+                    "255",
+                    "\"easeInQuad\"",
+                    "0.5",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Player1Turn",
+                    "Tween",
+                    "\"Player\"",
+                    "0",
+                    "88",
+                    "\"linear\"",
+                    "0.01",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Start.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
                     ""
                   ]
                 }
@@ -29742,7 +30772,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Touch Nodes"
+          "comment": "Press Nodes\n\n\n"
         },
         {
           "folded": true,
@@ -29756,6 +30786,26 @@
                 "turn",
                 "=",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "win",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Cutscene",
+                "False",
+                ""
               ]
             }
           ],
@@ -29788,7 +30838,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -29839,6 +30889,38 @@
                     "True",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player1Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -29869,7 +30951,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -29920,6 +31002,38 @@
                     "True",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player1Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node2",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -29950,7 +31064,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -30001,6 +31115,38 @@
                     "True",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player1Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node3",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -30031,7 +31177,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -30082,6 +31228,38 @@
                     "True",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player1Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node4",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -30112,7 +31290,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -30163,6 +31341,38 @@
                     "True",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player1Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node5",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -30193,7 +31403,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -30232,6 +31442,38 @@
                     "turn",
                     "=",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node6",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player1Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
                   ]
                 },
                 {
@@ -30274,7 +31516,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -30313,6 +31555,38 @@
                     "turn",
                     "=",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node7",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player1Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
                   ]
                 },
                 {
@@ -30355,7 +31629,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -30394,6 +31668,38 @@
                     "turn",
                     "=",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node8",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player1Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
                   ]
                 },
                 {
@@ -30436,7 +31742,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -30475,6 +31781,38 @@
                     "turn",
                     "=",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node9",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player1Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
                   ]
                 },
                 {
@@ -30505,6 +31843,26 @@
                 "=",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "win",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Cutscene",
+                "False",
+                ""
+              ]
             }
           ],
           "actions": [],
@@ -30536,7 +31894,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -30587,6 +31945,38 @@
                     "True",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player2Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -30617,7 +32007,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -30668,6 +32058,38 @@
                     "True",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player2Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node2",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -30698,7 +32120,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -30749,6 +32171,38 @@
                     "True",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player2Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node3",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -30779,7 +32233,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -30830,6 +32284,38 @@
                     "True",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player2Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node4",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -30860,7 +32346,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -30911,6 +32397,38 @@
                     "True",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player2Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5\n"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node5",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -30941,7 +32459,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -30980,6 +32498,38 @@
                     "turn",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node6",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player2Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5\n"
                   ]
                 },
                 {
@@ -31022,7 +32572,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -31061,6 +32611,38 @@
                     "turn",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node7",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player2Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5\n"
                   ]
                 },
                 {
@@ -31103,7 +32685,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -31142,6 +32724,38 @@
                     "turn",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node8",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player2Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5\n"
                   ]
                 },
                 {
@@ -31184,7 +32798,7 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonReleased"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
@@ -31223,6 +32837,38 @@
                     "turn",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node9",
+                    "Fill",
+                    "True",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "music\\Player2Move.mp3",
+                    "2",
+                    "no",
+                    "SoundValue",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5\n"
                   ]
                 },
                 {
@@ -31702,7 +33348,7 @@
                 "WinConditions",
                 "Text",
                 "=",
-                "\"Player 1 Wins!\""
+                "Player1Character + \" wins!\""
               ]
             },
             {
@@ -31717,6 +33363,34 @@
                 "\"easeInOutCubic\"",
                 "0.1",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Player1Turn",
+                "Tween",
+                "\"text\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Player2Turn",
+                "Tween",
+                "\"text\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
               ]
             },
             {
@@ -31779,13 +33453,12 @@
             },
             {
               "type": {
-                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
               },
               "parameters": [
                 "Player_1",
                 "Tween",
                 "\"b\"",
-                "0",
                 "50",
                 "\"swingTo\"",
                 "0.5",
@@ -31794,23 +33467,41 @@
             },
             {
               "type": {
-                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
               },
               "parameters": [
                 "Player_2",
                 "Tween",
                 "\"b\"",
-                "909",
                 "80",
                 "\"swingTo\"",
                 "0.5",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Cutscene",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Player1WinCount",
+                "+",
+                "1"
+              ]
             }
           ],
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -31875,6 +33566,16 @@
                 },
                 {
                   "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Cutscene",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
@@ -31906,6 +33607,105 @@
                     "win",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node2",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node3",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node4",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node5",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node6",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node7",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node8",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node9",
+                    "Fill",
+                    "False",
+                    ""
                   ]
                 },
                 {
@@ -32128,121 +33928,6 @@
                     "909",
                     "=",
                     "65"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "4"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node2",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node3",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node4",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node5",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node6",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node7",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node8",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node9",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    }
                   ]
                 }
               ]
@@ -32670,6 +34355,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -32698,7 +34384,7 @@
                 "WinConditions",
                 "Text",
                 "=",
-                "\"Player 2 Wins!\""
+                "Player2Character + \" wins!\""
               ]
             },
             {
@@ -32713,6 +34399,34 @@
                 "\"easeInOutCubic\"",
                 "0.1",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Player1Turn",
+                "Tween",
+                "\"text\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Player2Turn",
+                "Tween",
+                "\"text\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
               ]
             },
             {
@@ -32775,13 +34489,12 @@
             },
             {
               "type": {
-                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
               },
               "parameters": [
                 "Player_1",
                 "Tween",
                 "\"b\"",
-                "0",
                 "80",
                 "\"swingTo\"",
                 "0.5",
@@ -32790,17 +34503,36 @@
             },
             {
               "type": {
-                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
               },
               "parameters": [
                 "Player_2",
                 "Tween",
                 "\"b\"",
-                "909",
                 "50",
                 "\"swingTo\"",
                 "0.5",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Cutscene",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Player2WinCount",
+                "+",
+                "1"
               ]
             }
           ],
@@ -32891,6 +34623,16 @@
                     "Opacity",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Cutscene",
+                    "False",
+                    ""
                   ]
                 },
                 {
@@ -33000,6 +34742,105 @@
                     "own",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node2",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node3",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node4",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node5",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node6",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node7",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node8",
+                    "Fill",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Node9",
+                    "Fill",
+                    "False",
+                    ""
                   ]
                 },
                 {
@@ -33123,121 +34964,6 @@
                     "909",
                     "=",
                     "65"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "4"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node2",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node3",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node4",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node5",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node6",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node7",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node8",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Node9",
-                        "Fill",
-                        "False",
-                        ""
-                      ]
-                    }
                   ]
                 }
               ]
@@ -33414,6 +35140,105 @@
             },
             {
               "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Node",
+                "Fill",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Node2",
+                "Fill",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Node3",
+                "Fill",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Node4",
+                "Fill",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Node5",
+                "Fill",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Node6",
+                "Fill",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Node7",
+                "Fill",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Node8",
+                "Fill",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Node9",
+                "Fill",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
@@ -33549,114 +35374,19 @@
                 ""
               ]
             }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Node",
-                    "Fill",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Node2",
-                    "Fill",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Node3",
-                    "Fill",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Node4",
-                    "Fill",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Node5",
-                    "Fill",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Node6",
-                    "Fill",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Node7",
-                    "Fill",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Node8",
-                    "Fill",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Node9",
-                    "Fill",
-                    "False",
-                    ""
-                  ]
-                }
-              ]
-            }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Draw"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -33780,6 +35510,39 @@
           "actions": [
             {
               "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "draw",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "draw",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
@@ -33809,6 +35572,16 @@
               },
               "parameters": [
                 "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Cutscene",
+                "True",
+                ""
               ]
             },
             {
@@ -34213,13 +35986,684 @@
                 "0.01",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "draw",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Cutscene",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Turn Checker"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "win",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "turn",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Cutscene",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player_1",
+                "Animation",
+                "=",
+                "Player1_Turn"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player_2",
+                "Animation",
+                "=",
+                "Player2_Wait"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Player_1",
+                "Tween",
+                "\"Player1Animation\"",
+                "20",
+                "65",
+                "\"swingTo\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Player_2",
+                "Tween",
+                "\"Player1Animation\"",
+                "909",
+                "65",
+                "\"swingTo\"",
+                "0.5",
+                "no"
+              ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "win",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "turn",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Cutscene",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player_1",
+                "Animation",
+                "=",
+                "Player1_Wait"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player_2",
+                "Animation",
+                "=",
+                "Player2_Turn"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Player_1",
+                "Tween",
+                "\"Player2Animation\"",
+                "0",
+                "65",
+                "\"swingTo\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Player_2",
+                "Tween",
+                "\"Player2Animation\"",
+                "889",
+                "65",
+                "\"swingTo\"",
+                "0.5",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "draw",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Cutscene",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player_1",
+                "Animation",
+                "=",
+                "Player1_Turn"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player_2",
+                "Animation",
+                "=",
+                "Player2_Turn"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Player_1",
+                "Tween",
+                "\"Player2Animation\"",
+                "0",
+                "65",
+                "\"swingTo\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Player_2",
+                "Tween",
+                "\"Player2Animation\"",
+                "909",
+                "65",
+                "\"swingTo\"",
+                "0.5",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Player1WinCount",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Player1Wins",
+                    "Text",
+                    "=",
+                    "\"0\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Player1WinCount",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Player1Wins",
+                    "Text",
+                    "=",
+                    "\"1\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Player1WinCount",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Player1Wins",
+                    "Text",
+                    "=",
+                    "\"2\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Player2WinCount",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Player2Wins",
+                    "Text",
+                    "=",
+                    "\"0\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Player2WinCount",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Player2Wins",
+                    "Text",
+                    "=",
+                    "\"1\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Player2WinCount",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Player2Wins",
+                    "Text",
+                    "=",
+                    "\"2\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "turn",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "win",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "draw",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Player1Turn",
+                "Tween",
+                "\"text\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Player2Turn",
+                "Tween",
+                "\"text\"",
+                "255",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "turn",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "win",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "draw",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Player1Turn",
+                "Tween",
+                "\"text\"",
+                "255",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Player2Turn",
+                "Tween",
+                "\"text\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "draw",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Player1Turn",
+                "Tween",
+                "\"text\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Player2Turn",
+                "Tween",
+                "\"text\"",
+                "0",
+                "\"linear\"",
+                "0.5",
+                "no"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
